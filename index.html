@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- /****** styles ****/ -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="burger.css" />
+    <link rel="stylesheet" href="sidenav.css">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <ul>
+            <li><a>Home</a></li>
+            <li><a>Technologies</a></li>
+            <li><a>Projects</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+
+          <!-- sidenav -->
+          <span class="brg" onclick="openNav()">&#9776;</span>
+        </nav>
+        <div id="mySidenav" class="sidenav" onclick="closeNav()">
+          <a class="closebtn" onclick="closeNav()">&times;</a>
+          <a>Home</a>
+            <a>Technologies</a>
+            <a>Projects</a>
+            <a>Contact</a>
+        </div>
+      </div>
+      </div>
+    </header>
+
+    <!-- script -->
+    <script src="main.js"></script>
+  </body>
+</html>

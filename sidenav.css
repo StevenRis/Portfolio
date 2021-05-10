@@ -1,0 +1,82 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  --bg-primary: #131313;
+  --text-primary: #dfb131;
+  --text-secondary: #fff;
+}
+
+.navbar {
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  /* font-weight: 500; */
+  /* margin-top: -1em; */
+}
+
+.navbar ul {
+  list-style-type: none;
+  /* overflow: hidden; */
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  /* text-align: center; */
+  /* padding: 14px 16px; */
+  color: var(--text-primary);
+  font-size: 1.3rem;
+}
+
+.brg {
+  position: fixed;
+  font-size: 30px;
+}
+
+.sidenav {
+  /* height: 100%; */
+  /* width: 0; */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--text-primary);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+  border-radius: 0px 0px 800px 0px;
+}
+
+.sidenav a {
+  /* text-decoration: none; */
+  font-size: 35px;
+  /* color: rgb(0, 0, 0); */
+  /* display: block; */
+  /* transition: 3s; */
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  padding: 8px 8px 8px 32px;
+  /* left: 25px; */
+  /* font-size: 56px; */
+  /* margin-left: 50px; */
+  color: var(--bg-primary);
+}
+
+@media (max-width: 770px) {
+  .navbar li {
+    display: none;
+  }
+}
+
+@media (min-width: 770px) {
+  .navbar span {
+    display: none;
+  }
+}
