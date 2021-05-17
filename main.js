@@ -19,7 +19,7 @@
 // });
 
 function openNav() {
-  document.getElementById('mySidenav').style.width = '70vw';
+  document.getElementById('mySidenav').style.width = '75vw';
 }
 
 function closeNav() {

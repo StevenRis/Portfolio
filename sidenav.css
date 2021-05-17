@@ -3,20 +3,16 @@
   font-size: 16px;
   --bg-primary: #131313;
   --text-primary: #dfb131;
-  --text-secondary: #fff;
+  --text-secondary: #f2f2f6;
 }
 
 .navbar {
   display: flex;
-  /* justify-content: space-around; */
-  /* align-items: center; */
-  /* font-weight: 500; */
-  /* margin-top: -1em; */
+  justify-content: space-between;
 }
 
 .navbar ul {
   list-style-type: none;
-  /* overflow: hidden; */
 }
 
 li {
@@ -26,8 +22,6 @@ li {
 li a {
   display: block;
   text-decoration: none;
-  /* text-align: center; */
-  /* padding: 14px 16px; */
   color: var(--text-primary);
   font-size: 1.3rem;
 }
@@ -35,11 +29,12 @@ li a {
 .brg {
   position: fixed;
   font-size: 30px;
+  left: 20px;
+  color: var(--text-primary);
 }
 
 .sidenav {
-  /* height: 100%; */
-  /* width: 0; */
+  height: 70vh;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -52,20 +47,16 @@ li a {
 }
 
 .sidenav a {
-  /* text-decoration: none; */
   font-size: 35px;
-  /* color: rgb(0, 0, 0); */
-  /* display: block; */
-  /* transition: 3s; */
+  top: 25px;
+  padding-left: 10px;
+  display: block;
 }
 
 .closebtn {
   position: absolute;
   top: 0;
   padding: 8px 8px 8px 32px;
-  /* left: 25px; */
-  /* font-size: 56px; */
-  /* margin-left: 50px; */
   color: var(--bg-primary);
 }
 

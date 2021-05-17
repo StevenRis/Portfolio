@@ -11,11 +11,11 @@
   font-size: 16px;
   --bg-primary: #131313;
   --text-primary: #dfb131;
-  --text-secondary: #fff;
+  --text-secondary: #F2F2F6;
 }
 
 body {
-  /* background-color: var(--bg-primary); */
+  background-color: var(--bg-primary);
 }
 
 body::-webkit-scrollbar {
@@ -53,6 +53,25 @@ li {
   justify-content: flex-end;
   border: 1px solid white;
 } */
+
+
+/********* LANGUAGE **********/
+.language {
+  display: flex;
+  align-items: center;
+}
+
+.language img {
+  padding: 0 10px;
+  width: 54px;
+  cursor: pointer;
+  filter: saturate(50%);
+  
+  text-align: center;
+}
+
+.language img:hover {
+  filter: saturate(1);
 
 /******** MEDIA *******/
 @media (min-width: 860px) {
