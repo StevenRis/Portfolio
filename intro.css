@@ -1,24 +1,24 @@
-:root {
+/* :root {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   --bg-primary: #131313;
   --text-primary: #dfb131;
   --text-secondary: #f2f2f6;
-}
+} */
 
 .intro {
   margin: 3rem 0;
 }
 
-span {
-  color: #dfb131;
-  margin-left: -10px;
-}
-
-h1 {
+.intro h1 {
   color: var(--text-secondary);
   font-weight: 900;
   font-size: 3.3rem;
+}
+
+.intro span {
+  color: var(--text-primary);
+  margin-left: -15px;
 }
 
 .intro-center {
@@ -36,11 +36,7 @@ h1 {
 }
 
 .text-bottom {
-  padding: 40px 0;
-}
-
-.intro-buttons {
-  text-align: center;
+  padding: 30px 0;
 }
 
 /****** buttons ******/
@@ -54,11 +50,9 @@ h1 {
 .buttons a {
   text-decoration: none;
   border: 5px solid var(--text-primary);
-  border-radius: 15px;
-  padding: 13px 25px;
-  /* margin: 10px 10px; */
+  border-radius: 25px;
   color: #fff;
-  text-align: center;
+  padding: 10px 40px;
 }
 
 .buttons img {

@@ -25,3 +25,8 @@ function openNav() {
 function closeNav() {
   document.getElementById('mySidenav').style.width = '0';
 }
+
+const currentDate = new Date();
+const year = currentDate.getFullYear();
+console.log(year);
+document.getElementById('year').innerHTML = '&#169;Copyright ' + year;

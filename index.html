@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="burger.css" />
     <link rel="stylesheet" href="sidenav.css" />
-    <link rel="stylesheet" href="aboutMe.css" />
+    <link rel="stylesheet" href="intro.css" />
     <link rel="stylesheet" href="bio_n_tech.css" />
     <link rel="stylesheet" href="projects.css" />
     <link rel="stylesheet" href="get_in_touch.css" />
@@ -218,7 +218,7 @@
 
         <!-- CONTACT FORM -->
         <div class="form">
-          <form action="/action_page.php">
+          <form action="mailto:s.griszko@gmail.com" method="POST">
             <label for="fname">Full Name</label>
             <input type="text" id="fname" name="fullname" />
 
@@ -232,7 +232,7 @@
             <input type="text" id="message" name="message" />
 
             <div class="send">
-              <a href="/action_page.php"
+              <a href=""
                 ><img
                   src="images/send-mail.png"
                   alt=""
@@ -244,15 +244,34 @@
             <!-- <input type="submit" value="Send" /> -->
           </form>
         </div>
-
+        <!-- CONTACT ICONS -->
         <div class="contact-icons">
-          <div>email</div>
-          <div>face</div>
-          <div>linkedin</div>
-          <div>github</div>
+          <div>
+            <a href="mailto:s.griszko@gmail.com"
+              ><img src="images/email-icon.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/profile.php?id=100014849559908"
+              ><img src="images/facebook.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/stanis%C5%82aw-griszko-b8a595122/"
+              ><img src="images/linkedin.png" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="https://github.com/StevenRis"
+              ><img src="images/github-icon.png" alt=""
+            /></a>
+          </div>
         </div>
       </section>
-
+      <footer>
+        <p id="year"></p>
+      </footer>
       <!-- container div end -->
     </div>
 

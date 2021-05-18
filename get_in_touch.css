@@ -9,14 +9,19 @@
 .getintouch h1 {
   color: var(--text-primary);
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
+  margin-top: 1.25rem;
 }
 
 .getintouch p {
   color: var(--text-secondary);
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
+}
+
+form {
+  margin-top: 1.25rem;
 }
 
 input[type='text'] {
@@ -66,5 +71,21 @@ label {
 }
 
 .contact-icons {
+  display: flex;
+  justify-content: center;
   color: var(--text-primary);
+}
+
+.contact-icons div {
+  margin: 20px 10px 50px 10px;
+}
+
+.contact-icons img {
+  width: 75%;
+}
+
+footer p {
+  text-align: center;
+  color: var(--text-primary);
+  font-size: 13px;
 }
