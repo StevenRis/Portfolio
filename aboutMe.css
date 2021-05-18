@@ -53,7 +53,7 @@ h1 {
 
 .buttons a {
   text-decoration: none;
-  border: 5px solid #dfb131;
+  border: 5px solid var(--text-primary);
   border-radius: 15px;
   padding: 13px 25px;
   /* margin: 10px 10px; */
