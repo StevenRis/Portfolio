@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- /****** styles ****/ -->
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="burger.css" />
-    <link rel="stylesheet" href="sidenav.css" />
-    <link rel="stylesheet" href="intro.css" />
-    <link rel="stylesheet" href="bio_n_tech.css" />
-    <link rel="stylesheet" href="projects.css" />
-    <link rel="stylesheet" href="get_in_touch.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/burger.css" />
+    <link rel="stylesheet" href="./styles/sidenav.css" />
+    <link rel="stylesheet" href="./styles/intro.css" />
+    <link rel="stylesheet" href="./styles/bio_n_tech.css" />
+    <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="stylesheet" href="./styles/get_in_touch.css" />
 
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" >
       <!-- HEADER + NAVBAR -->
       <header>
         <div class="navbar">
@@ -33,8 +33,9 @@
             <span class="brg" onclick="openNav()">&#9776;</span>
           </div>
           <div class="language">
-            <img src="images/america.png" alt="" />
-            <img src="images/poland.png" alt="" />
+            <a href="index.html" style="margin-right: 10px"> <img src="images/america.png" alt="" /></a>
+
+            <a href="indexPL.html"><img src="images/poland.png" alt="" /><a href=""></a>
           </div>
         </div>
         <div id="mySidenav" class="sidenav" onclick="closeNav()">
@@ -236,27 +237,38 @@
           </div>
 
           <div class="form-input">
-            <input type="text" name="name" autocomplete="off" required />
+            <input type="text" name="email" autocomplete="off" required />
 
-            <label for="name" class="label-name">
+            <label for="email" class="label-name">
               <span class="content-name">Email</span>
             </label>
           </div>
 
           <div class="form-input">
-            <input type="text" name="name" autocomplete="off" required />
+            <input type="text" name="phone" autocomplete="off" required />
 
-            <label for="name" class="label-name">
+            <label for="phone" class="label-name">
               <span class="content-name">Phone</span>
             </label>
           </div>
 
           <div class="form-input">
-            <input type="text" name="name" autocomplete="off" required />
+            <input type="text" name="message" autocomplete="off" required />
 
-            <label for="name" class="label-name">
+            <label for="message" class="label-name">
               <span class="content-name">Your Message</span>
             </label>
+          </div>
+
+          <div class="send">
+            <a href=""
+              ><img
+                src="images/send-mail.png"
+                alt=""
+                value="Send"
+                type="submit"
+              />Send</a
+            >
           </div>
         </div>
 
