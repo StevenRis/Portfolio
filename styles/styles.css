@@ -19,7 +19,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 0.3rem;
+  width: 0.8rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -40,26 +40,15 @@ li {
 
 .container {
   padding-top: 1.875rem;
-  /* border: 2px dotted green; */
-  min-height: 100vh;
+
   max-width: 90%;
   margin: 0 auto;
 }
-
-/* .navbar {
-  display: flex;
-  border-bottom: 2px solid #dfb131;
-  height: 3rem;
-  justify-content: flex-end;
-  border: 1px solid white;
-} */
 
 /********* LANGUAGE **********/
 .language {
   display: flex;
   align-items: center;
-  /* justify-content: flex-end;
-  flex-direction: row; */
 }
 
 .language a {
@@ -75,14 +64,19 @@ li {
   filter: saturate(1);
 }
 
-.intro {
-  border-top: 3px solid var(--text-primary);
-  /* margin-top: 1.25rem; */
-}
-
 /******** MEDIA *******/
 @media (min-width: 860px) {
-  /* header {
+  .background-image {
     background: url(/images/intro.png) no-repeat fixed center;
-  } */
+  }
+
+  .navbar li * {
+    padding: 10px 80px 40px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .container {
+    min-height: 100vh;
+  }
 }

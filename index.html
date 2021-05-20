@@ -13,19 +13,22 @@
     <link rel="stylesheet" href="./styles/bio_n_tech.css" />
     <link rel="stylesheet" href="./styles/projects.css" />
     <link rel="stylesheet" href="./styles/get_in_touch.css" />
+<!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Document</title>
   </head>
   <body>
+    <div class="background-image">
     <div class="container" >
       <!-- HEADER + NAVBAR -->
       <header>
         <div class="navbar">
           <ul>
-            <li><a>Home</a></li>
-            <li><a>Technologies</a></li>
-            <li><a>Projects</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Technologies</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
 
           <!-- SIDENAV -->
@@ -73,13 +76,16 @@
           <a href="/"> <img src="images/user.png" alt="" /> CV </a>
         </div>
       </section>
+    </div>
+    </div>
 
+    <div class="container" >
       <!-- BIO and TECH SECTION -->
-      <section class="bio">
+      <section class="bio" data-aos="fade-up-right" data-aos-duration="1000">
         <div class="bio-photo">
           <img src="images/photo.png" alt="my photo" />
         </div>
-        <div class="photo-text">
+        <div class="photo-text" >
           <p>
             Hi there, My name is Stanisław I live in Poland. I'm interested in
             programing since 2019, when I created my very first project. I
@@ -89,7 +95,7 @@
       </section>
 
       <!-- TECHNOLOGIES -->
-      <section class="tech">
+      <section class="tech" data-aos="fade-up-right" data-aos-duration="1000">
         <div>
           <h1>Technologies</h1>
           <p>I use</p>
@@ -129,7 +135,7 @@
           </div>
         </div>
 
-        <div>
+        <div >
           <h1>Languages</h1>
           <p>I speak</p>
         </div>
@@ -150,12 +156,12 @@
       </section>
 
       <!-- PROJECTS SECTION -->
-      <section class="projects">
+      <section class="projects" data-aos="fade-up-right" data-aos-duration="1000">
         <div>
           <h1>Projects</h1>
           <p>which I created</p>
         </div>
-        <div class="flex">
+        <div class="flex" >
           <div>
             <img src="images/datepet.png" alt="" />
           </div>
@@ -219,7 +225,7 @@
       </section>
 
       <!-- GET IN TOUCH SECTION -->
-      <section class="getintouch">
+      <section class="getintouch" data-aos="fade-up-right" data-aos-duration="1000">
         <div>
           <h1>Get in touch</h1>
           <p>Message me</p>
@@ -272,33 +278,9 @@
           </div>
         </div>
 
-        <!-- <form action="mailto:s.griszko@gmail.com" method="POST">
-            <label for="fname">Full Name</label>
-            <input type="text" id="fname" name="fullname" />
-
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" />
-
-            <label for="phone">Phone</label>
-            <input type="text" id="phone" name="phone" />
-
-            <label for="phone">How can I help you?</label>
-            <input type="text" id="message" name="message" />
-
-            <div class="send">
-              <a href=""
-                ><img
-                  src="images/send-mail.png"
-                  alt=""
-                  value="Send"
-                  type="submit"
-                />Send</a
-              >
-            </div>
-          </form> -->
-
+       
         <!-- CONTACT ICONS -->
-        <div class="contact-icons">
+        <div class="contact-icons" data-aos="zoom-in-up" data-aos-duration="1500">
           <div>
             <a href="mailto:s.griszko@gmail.com"
               ><img src="images/email-icon.png" alt=""
@@ -322,7 +304,7 @@
           </div>
         </div>
       </section>
-      <footer>
+      <footer >
         <p id="year"></p>
       </footer>
       <!-- container div end -->
@@ -330,5 +312,12 @@
 
     <!-- script -->
     <script src="main.js"></script>
+
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
   </body>
 </html>
