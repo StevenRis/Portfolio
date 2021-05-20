@@ -20,7 +20,7 @@
   text-align: center;
 }
 
-form {
+/* form {
   margin-top: 1.25rem;
 }
 
@@ -39,15 +39,15 @@ input[type='text'] {
 label {
   color: var(--text-primary);
   font-weight: 600;
-}
+} */
 
 .send {
   display: flex;
   justify-content: center;
 }
 
-.form a {
-  /* width: 30%; */
+/* .form a {
+  
   text-decoration: none;
   background-color: var(--bg-primary);
   color: white;
@@ -56,11 +56,11 @@ label {
   border: 5px solid var(--text-primary);
   border-radius: 40px;
   cursor: pointer;
-  /* font-weight: bold; */
+  
   font-size: 1.7rem;
-}
+} */
 
-.form img {
+/* .form img {
   width: 25px;
   margin-right: 10px;
 }
@@ -68,7 +68,7 @@ label {
 .form a:hover {
   background-color: var(--text-primary);
   color: var(--bg-primary);
-}
+} */
 
 .contact-icons {
   display: flex;
@@ -88,4 +88,79 @@ footer p {
   text-align: center;
   color: var(--text-primary);
   font-size: 13px;
+}
+
+.getintouch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-input {
+  width: 70%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.7rem;
+  color: var(--text-secondary);
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background-color: var(--bg-primary);
+}
+
+.form-input label {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid var(--text-secondary);
+}
+
+.form label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid var(--text-primary);
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+  transform: translateX(0%);
 }
