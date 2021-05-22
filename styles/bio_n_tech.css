@@ -1,50 +1,37 @@
-:root {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  --bg-primary: #131313;
-  --text-primary: #dfb131;
-  --text-secondary: #f2f2f6;
-}
-
 .bio {
   display: flex;
   flex-direction: column;
+  padding-top: 1.875rem;
 }
 
-.bio-photo img {
-  /* display: block; */
+.bio img {
   width: 100%;
 }
 
-.photo-text p {
+.bio p {
   font-weight: 700;
   padding-top: 1rem;
+  font-size: 1.2rem;
   color: var(--text-secondary);
 }
 
-.tech div {
+.tech {
   margin-top: 1.5rem;
 }
 
 .tech h1 {
   text-align: center;
-  font-size: 2.5rem;
-  /* font-weight: 900; */
+  font-size: 2rem;
+  font-weight: 900;
   color: var(--text-primary);
+  text-transform: uppercase;
 }
 
 .tech p {
   color: var(--text-secondary);
   text-align: center;
-  font-weight: 500;
-  font-size: 30px;
-}
-
-.tech img {
-  width: 100px;
-  height: 100px;
-
-  /* padding-top: 10px; */
+  font-size: 1.8rem;
+  margin-top: 1.25rem;
 }
 
 .flex-icons {
@@ -56,15 +43,38 @@
 .flex-icons div {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   text-align: center;
-  margin: 15px 10px 10px 10px;
-  /* width: 150px; */
+  margin: 15px 15px 10px 10px;
 }
 
 .flex-icons p {
-  font-weight: 500;
   font-size: 20px;
-  padding-top: 10px;
+}
+
+@media (min-width: 860px) {
+  .bio {
+    padding-top: 0px;
+    grid-column: 1/2;
+  }
+
+  .bio p {
+    margin-top: 8%;
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+
+  .flex-icons div {
+    align-items: center;
+    margin: 5%;
+    width: 130px;
+  }
+
+  .flex-icons p {
+    font-size: 30px;
+  }
+
+  .tech h1 {
+    font-size: 2.5rem;
+  }
 }

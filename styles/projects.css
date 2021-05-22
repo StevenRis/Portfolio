@@ -1,10 +1,10 @@
-:root {
+/* :root {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   --bg-primary: #131313;
   --text-primary: #dfb131;
   --text-secondary: #f2f2f6;
-}
+} */
 
 /* .projects div {
   margin-top: 25px;
@@ -23,11 +23,6 @@
   text-align: center;
   font-weight: 500;
   font-size: 1.7rem;
-}
-
-.flex {
-  align-items: center;
-  justify-content: center;
 }
 
 .flex img {
@@ -67,4 +62,48 @@ h5 {
   color: var(--text-secondary);
   font-weight: 600;
   text-align: center;
+}
+
+@media (min-width: 860px) {
+  .flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* border: 1px solid white; */
+  }
+
+  .flex div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+  }
+
+  .content {
+    width: 500px;
+  }
+
+  .flex div * {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex img {
+    width: 100%;
+    display: block;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+  }
+
+  .flex h4,
+  h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 49px;
+  }
+
+  .flex p {
+    font-size: 36px;
+    line-height: 44px;
+  }
 }

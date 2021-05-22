@@ -47,6 +47,8 @@ li a {
 }
 
 .sidenav a {
+  color: var(--bg-primary);
+  text-decoration: none;
   font-size: 35px;
   top: 25px;
   padding-left: 10px;
@@ -60,13 +62,13 @@ li a {
   color: var(--bg-primary);
 }
 
-@media (max-width: 770px) {
+@media (max-width: 860px) {
   .navbar li {
     display: none;
   }
 }
 
-@media (min-width: 770px) {
+@media (min-width: 860px) {
   .navbar span {
     display: none;
   }

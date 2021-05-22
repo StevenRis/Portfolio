@@ -39,10 +39,12 @@ li {
 }
 
 .container {
-  padding-top: 1.875rem;
-
   max-width: 90%;
   margin: 0 auto;
+}
+
+header {
+  padding-top: 1.875rem;
 }
 
 /********* LANGUAGE **********/
@@ -72,11 +74,17 @@ li {
 
   .navbar li * {
     padding: 10px 80px 40px 0;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: bold;
   }
 
   .container {
     min-height: 100vh;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
   }
 }
