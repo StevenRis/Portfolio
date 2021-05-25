@@ -1,55 +1,66 @@
 .bio {
   display: flex;
   flex-direction: column;
-  padding-top: 1.875rem;
 }
 
 .bio img {
   width: 100%;
+  display: block;
+  height: auto;
+  margin-bottom: 1em;
 }
 
 .bio p {
-  font-weight: 700;
-  padding-top: 1rem;
-  font-size: 1.2rem;
+  margin-top: 1em;
   color: var(--text-secondary);
 }
 
 .tech {
-  margin-top: 1.5rem;
+  border: 1px solid green;
 }
 
 .tech h1 {
   text-align: center;
-  font-size: 2rem;
   font-weight: 900;
   color: var(--text-primary);
   text-transform: uppercase;
+  margin-top: 1em;
 }
 
-.tech p {
+.tech h4 {
   color: var(--text-secondary);
   text-align: center;
-  font-size: 1.8rem;
-  margin-top: 1.25rem;
+  margin: 0.8em 0;
 }
 
 .flex-icons {
   display: flex;
+  /* flex-direction: row; */
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
+  align-items: center;
 }
 
-.flex-icons div {
+.flex-icons img {
+  display: block;
+  width: 2rem;
+  height: auto;
+}
+
+.icon {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
-  text-align: center;
-  margin: 15px 15px 10px 10px;
+  align-items: center;
+  /* justify-content: left; */
+  /* text-align: left; */
+  /* margin: 15px 15px 10px 10px; */
+  width: 5rem;
 }
 
-.flex-icons p {
-  font-size: 20px;
+.icon p {
+  text-align: center;
+  margin: 0.8em 0;
+  color: var(--text-secondary);
 }
 
 @media (min-width: 860px) {
@@ -60,7 +71,7 @@
 
   .bio p {
     margin-top: 8%;
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     font-weight: 800;
   }
 
@@ -71,10 +82,10 @@
   }
 
   .flex-icons p {
-    font-size: 30px;
+    /* font-size: 30px; */
   }
 
   .tech h1 {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
   }
 }

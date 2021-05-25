@@ -1,11 +1,3 @@
-:root {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  --bg-primary: #131313;
-  --text-primary: #dfb131;
-  --text-secondary: #f2f2f6;
-}
-
 .menu-btn {
   width: 2rem;
   height: 2rem;

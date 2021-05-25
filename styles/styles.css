@@ -8,10 +8,17 @@
 
 :root {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  /* font-size: 16px; */
+  /* font-size: 62.5%; */
   --bg-primary: #131313;
   --text-primary: #dfb131;
-  --text-secondary: #f2f2f6;
+  --text-secondary: #d3d3d4;
+}
+
+html {
+  /* font-size: 62.5%; */
+  font-size: calc(1em + 1vw);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,7 +26,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 0.3em;
 }
 
 body::-webkit-scrollbar-track {
@@ -31,7 +38,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1,
-h3,
 h4,
 p,
 li {
@@ -39,12 +45,14 @@ li {
 }
 
 .container {
-  max-width: 90%;
+  max-width: 85%;
   margin: 0 auto;
+  /* min-height: 100vh; */
 }
 
 header {
-  padding-top: 1.875rem;
+  padding-top: 1em;
+  border-bottom: 3px solid var(--text-primary);
 }
 
 /********* LANGUAGE **********/
@@ -59,29 +67,29 @@ header {
 }
 
 .language img {
-  width: 44px;
+  width: 2rem;
+  height: auto;
 }
 
 .language a:hover {
-  filter: saturate(1);
+  filter: saturate(100%);
 }
 
 /******** MEDIA *******/
-@media (min-width: 860px) {
+@media (min-width: 768px) {
   .background-image {
     background: url(/images/intro.png) no-repeat fixed center;
-    /* filter: grayscale(100%); */
   }
 
   .navbar li * {
     padding: 10px 80px 40px 0;
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     font-weight: bold;
   }
 
   .container {
-    min-height: 100vh;
-    max-width: 75%;
+    /* min-height: 100vh; */
+    /* max-width: 75%; */
   }
 
   .grid-container {

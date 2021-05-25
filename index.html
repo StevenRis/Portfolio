@@ -7,7 +7,7 @@
 
     <!-- /****** styles ****/ -->
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/burger.css" />
+    <!-- <link rel="stylesheet" href="./styles/burger.css" /> -->
     <link rel="stylesheet" href="./styles/sidenav.css" />
     <link rel="stylesheet" href="./styles/intro.css" />
     <link rel="stylesheet" href="./styles/bio_n_tech.css" />
@@ -18,9 +18,9 @@
 
     <title>Document</title>
   </head>
-  <body>
+  <body >
     <div class="background-image">
-    <div class="container" >
+    <div class="container" style="border: 1px solid #fff;">
       <!-- HEADER + NAVBAR -->
       <header>
         <div class="navbar">
@@ -49,14 +49,14 @@
           <a href="#get_in_touch_section">Contact</a>
         </div>
       </header>
-
-      <!-- INTRO SECTION  -->
-      <section class="intro">
+      
+      <!-- HERO SECTION  -->
+      <div class="hero">
         <div>
           <h1>Hello <span>.</span></h1>
         </div>
 
-        <div class="intro-center">
+        <div class="text-center">
           <div><h1>I am</h1></div>
           <div><h4>a front-end developer</h4></div>
         </div>
@@ -66,29 +66,28 @@
         </div>
 
         <div class="text-bottom">
-          <h4>
+          <p>
             Spending time on learning new things gives me great satisfaction. I
             love to develop and I like what I do.
-          </h4>
+          </p>
         </div>
         <div class="buttons">
           <a href="#get_in_touch_section">Contact</a>
           <a href="/"> <img src="images/user.png" alt="" /> CV </a>
         </div>
-      </section>
+      </div>
     </div>
     </div>
 
-    <div class="container" >
+    <div class="container" style="border: 1px solid #fff;">
       <!-- BIO and TECH SECTION -->
       <div class="grid-container">
         <!-- BIO -->
-      <section class="bio" data-aos="fade-up-right" data-aos-duration="1800">
+      <div class="bio" data-aos="zoom-in-up" data-aos-duration="1000">
         
           <div class="bio-photo">
             <img src="images/photo.png" alt="my photo" />
-          
-          
+            <h1>About Me</h1>       
             <p>
               Hi there, My name is Stanisław I live in Poland. I'm interested in
               programing since 2019, when I created my very first project. I
@@ -96,63 +95,63 @@
             </p>
           </div>
         
-      </section>
+        </div>
 
       <!-- TECHNOLOGIES -->
-      <section class="tech" data-aos="fade-up-left" data-aos-duration="1800">
+      <section class="tech" data-aos="zoom-in" data-aos-duration="1000">
        
           <div>
             <h1>Technologies</h1>
-            <p>I use</p>
+            <h4>which I use</h4>
           </div>
           <div class="flex-icons">
-            <div >
+            <div class="icon">
               <img src="images/html5.png" alt="" />
               <p>HTML</p>
             </div>
-            <div >
+            <div class="icon" >
               <img src="images/css.png" alt="" />
               <p>CSS</p>
             </div>
-            <div >
+            <div class="icon" >
               <img src="images/js.png" alt="" />
               <p>JavaScript</p>
             </div>
-            <div >
+            <div class="icon" >
               <img src="images/react.png" alt="" />
               <p>React</p>
             </div>
-            <div >
+            <div class="icon" >
               <img src="images/github.png" alt="" />
               <p>Github</p>
             </div>
-            <div >
+            <div class="icon" >
               <img src="images/Git.png" alt="" />
               <p>Git</p>
             </div>
-            <div >
+            <div class="icon" >
               <img src="images/Figma.png" alt="" />
               <p>Bootstrap</p>
             </div>
-            <div >
+            <div class="icon" >
               <img src="images/Figma.png" alt="" />
               <p>Figma</p>
             </div>
           </div>
           <div >
             <h1>Languages</h1>
-            <p>I speak</p>
+            <h4>I speak</h4>
           </div>
           <div class="flex-icons">
-            <div>
+            <div class="icon">
               <img src="images/en.png" alt="english" />
               <p>English</p>
             </div>
-            <div>
+            <div class="icon">
               <img src="images/pl.png" alt="polish" />
               <p>Polish</p>
             </div>
-            <div>
+            <div class="icon">
               <img src="images/ru.png" alt="russian" />
               <p>Russian</p>
             </div>
@@ -161,7 +160,7 @@
       </section>
 
       <!-- PROJECTS SECTION -->
-      <section class="projects" data-aos="fade-up-right" data-aos-duration="1000">
+      <section class="projects" data-aos="zoom-in" data-aos-duration="1000">
         <div>
           <h1>Projects</h1>
           <p>which I created</p>
@@ -237,7 +236,7 @@
       </section>
 
       <!-- GET IN TOUCH SECTION -->
-      <section class="getintouch" data-aos="fade-up-right" data-aos-duration="1000">
+      <section class="getintouch" data-aos="zoom-in" data-aos-duration="1000">
         <div id="get_in_touch_section">
           
           <!-- <h1>Get in touch</h1>

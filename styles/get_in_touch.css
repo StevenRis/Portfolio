@@ -1,11 +1,3 @@
-/* :root {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  --bg-primary: #131313;
-  --text-primary: #dfb131;
-  --text-secondary: #f2f2f6;
-} */
-
 .getintouch {
   display: flex;
   /* justify-content: space-around; */
@@ -19,14 +11,14 @@
 .getintouch h1 {
   color: var(--text-primary);
   /* text-align: center; */
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   margin-top: 1.25rem;
 }
 
 .getintouch p {
   color: var(--text-secondary);
-  font-size: 1.8rem;
-  font-weight: 600;
+  /* font-size: 1.8rem; */
+  /* font-weight: 600; */
   text-align: center;
   margin-top: 1.25rem;
 }
@@ -86,14 +78,14 @@
   left: 0;
   transition: all 0.3s ease;
   color: var(--text-secondary);
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   font-weight: 700;
 }
 
 .form input:focus + .label-name .content-name,
 .form input:valid + .label-name .content-name {
   transform: translateY(-150%);
-  font-size: 1rem;
+  /* font-size: 1rem; */
   color: var(--text-primary);
 }
 
@@ -117,7 +109,7 @@
   border: 5px solid var(--text-primary);
   border-radius: 40px;
   cursor: pointer;
-  font-size: 1.7rem;
+  /* font-size: 1.7rem; */
 }
 
 .send img {
@@ -152,7 +144,7 @@ footer {
 footer p {
   text-align: center;
   color: var(--text-primary);
-  font-size: 13px;
+  /* font-size: 13px; */
   padding: 10px 0;
 }
 
