@@ -8,21 +8,25 @@
 
 :root {
   font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.05em;
   /* font-size: 16px; */
   /* font-size: 62.5%; */
-  --bg-primary: #131313;
+  /* --bg-primary: #131313;
   --text-primary: #dfb131;
-  --text-secondary: #d3d3d4;
+  --text-secondary: #d3d3d4; */
+  scroll-behavior: smooth;
+  /* font-size: 62.5%; */
+  --black: #131313;
+  --gold: #dfb131;
+  --white: #d3d3d4;
 }
 
 html {
-  /* font-size: 62.5%; */
-  font-size: calc(1em + 1vw);
-  scroll-behavior: smooth;
+  font-size: calc(1.8em + 1vw);
 }
 
 body {
-  background-color: var(--bg-primary);
+  background-color: var(--black);
 }
 
 body::-webkit-scrollbar {
@@ -38,13 +42,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1,
+h2,
+h3,
 h4,
 p,
 li {
-  color: var(--text-primary);
+  color: var(--gold);
 }
 
 .container {
+  height: 100vh;
+  /* height: calc(var(--vh, 1vh) * 100); */
   max-width: 85%;
   margin: 0 auto;
   /* min-height: 100vh; */
@@ -52,7 +60,7 @@ li {
 
 header {
   padding-top: 1em;
-  border-bottom: 3px solid var(--text-primary);
+  border-bottom: 3px solid var(--gold);
 }
 
 /********* LANGUAGE **********/
@@ -78,16 +86,16 @@ header {
 /******** MEDIA *******/
 @media (min-width: 768px) {
   .background-image {
-    background: url(/images/intro.png) no-repeat fixed center;
+    /* background: url(/images/intro.png) no-repeat fixed center; */
   }
 
-  .navbar li * {
-    padding: 10px 80px 40px 0;
-    /* font-size: 1.8rem; */
-    font-weight: bold;
+  .navbar li {
+    margin-right: 2em;
   }
 
   .container {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     /* min-height: 100vh; */
     /* max-width: 75%; */
   }

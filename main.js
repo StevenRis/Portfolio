@@ -28,5 +28,5 @@ function closeNav() {
 
 const currentDate = new Date();
 const year = currentDate.getFullYear();
-console.log(year);
+// console.log(year);
 document.getElementById('year').innerHTML = '&#169;Copyright ' + year;
