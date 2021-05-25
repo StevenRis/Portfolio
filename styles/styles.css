@@ -70,6 +70,7 @@ header {
 @media (min-width: 860px) {
   .background-image {
     background: url(/images/intro.png) no-repeat fixed center;
+    /* filter: grayscale(100%); */
   }
 
   .navbar li * {
@@ -80,6 +81,7 @@ header {
 
   .container {
     min-height: 100vh;
+    max-width: 75%;
   }
 
   .grid-container {
