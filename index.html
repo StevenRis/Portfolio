@@ -45,7 +45,7 @@
         <div class="about-me__container">
           <img src="images/photo.png" class="photo" alt="my photo">
           <h2>About Me</h2>
-          <p class="text-bottom about-me__text">Hi there, My name is Stanisław I live in Poland. I'm interested in
+          <p class="about-me__text">Hi there, My name is Stanisław I live in Poland. I'm interested in
             programing since 2019, when I created my very first project. I
             consider this to be the beginning of my adventure with programing</p>
         </div>
@@ -106,7 +106,7 @@
         <h2>Projects</h2>
         <p class="p__text">which I created</p>
         <div class="portfolio-projects__container" >
-          <div class="projects-image">
+          <div class="projects-image project__one">
             <img src="images/datepet2.png" alt="" />
           </div>
           <div class="project-description">
@@ -164,9 +164,9 @@
         </div>
       </section>
       <section class="contact">
-        <div class="contact-form">
-          <h2>Get in touch</h2>
+        <h2>Get in touch</h2>
           <p class="p__text">Message me</p>
+        <div class="contact-form">
           <div class="form-input">
             <input type="text" name="name" autocomplete="off" required />
             <label for="name" class="label-name">
@@ -191,28 +191,22 @@
               <span class="content-name">Your Message</span>
             </label>
           </div>
-          <a class="btn" href=""><img src="images/send-mail.png" alt="" value="Send" type="submit"/>Send</a>
+          <a class="btn btn-form" href=""><img src="images/send-mail.png" alt="" value="Send" type="submit"/>Send</a>
           </div>
 
         <section class="contact-information">
           <div class="contact-icons" >
             <div class="contact-icon">
               <img src="images/phone-icon.png" alt="">
+              <a href="tel:+48577029034">+48 577 029 034</a>
             </div>
-            <div class="contact-data">
-              <h4>Phone</h4>
-              <p>You can contact me</p>
-              <p>+48 577 029 034</p>
-            </div>
+
             <div class="contact-icon">
               <img src="images/email-icon.png" alt="">
+              <a href="mailto:s.griszko@gmail.com" target="_blank" rel="nofollow noopener noreferrer">s.griszko@gmail.com</a>
             </div>
-            <div class="contact-data">
-              <h4>Email</h4>
-              <p>Write me email</p>
-              <p>s.griszko@gmail.com</p>
-            </div>
-            <div class="contact-icon">
+
+            <!-- <div class="contact-icon">
               <img src="images/facebook.png" alt="">
             </div>
             <div class="contact-data">
@@ -232,7 +226,7 @@
             <div class="contact-data">
               <h4>Github</h4>
               <p>Take a look at my code</p>
-            </div>
+            </div> -->
           </div>
         </section>
       </section>
