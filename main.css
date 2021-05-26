@@ -61,6 +61,7 @@ h2 {
     0 -1px var(--gold);
   letter-spacing: 3px;
   text-transform: uppercase;
+  margin: 2.5vh 0;
 }
 
 h3,
@@ -72,7 +73,6 @@ header {
   height: 100vh;
   background: lightgoldenrodyellow;
   padding: 1em 1.5em;
-  border: 1px solid grey;
   background: var(--black);
 }
 
@@ -183,6 +183,7 @@ ul {
 .photo {
   display: block;
   width: 100%;
+  border-radius: 2%;
 }
 
 .skills__container {
@@ -209,6 +210,10 @@ ul {
 .icon p {
   margin: 0.8em 0;
   color: var(--white);
+}
+
+.project-description {
+  margin-top: -2em;
 }
 
 .projects-image img {
