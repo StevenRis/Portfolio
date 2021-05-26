@@ -89,10 +89,15 @@ header {
 }
 
 footer {
-  font-size: 1rem;
-  color: var(--gold);
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
   text-align: center;
-  border-top: 2px solid var(--gold);
+}
+
+footer p {
+  color: var(--gold);
+  padding: 4rem;
 }
 
 nav {
