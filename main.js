@@ -1,32 +1,20 @@
-// const menuBtn = document.querySelector('.menu-btn');
-// const leftNav = document.querySelector('.left-nav');
+const navigation = document.querySelector('.navigation');
 
-// let menuOpen = false;
-// let slide = false;
-
-// menuBtn.addEventListener('click', () => {
-//   if (!menuOpen) {
-//     menuBtn.classList.add('open');
-//     leftNav.classList.add('slide');
-//     menuOpen = true;
-//     slide = true;
-//   } else {
-//     menuBtn.classList.remove('open');
-//     leftNav.classList.remove('slide');
-//     menuOpen = false;
-//     slide = false;
-//   }
-// });
-
-function openNav() {
-  document.getElementById('mySidenav').style.width = '60vw';
-}
-
-function closeNav() {
-  document.getElementById('mySidenav').style.width = '0';
-}
+// hamburger menu code
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if (!menuOpen) {
+    menuBtn.classList.add('open');
+    navigation.classList.toggle('active');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    navigation.classList.remove('active');
+    menuOpen = false;
+  }
+});
 
 const currentDate = new Date();
 const year = currentDate.getFullYear();
-// console.log(year);
 document.getElementById('year').innerHTML = '&#169;Copyright ' + year;
