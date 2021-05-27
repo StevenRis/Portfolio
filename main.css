@@ -16,7 +16,6 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
-  /* background: var(--black); */
 }
 
 @media (max-width: 75em) {
@@ -77,6 +76,10 @@ p {
   color: var(--white);
 }
 
+.p__text {
+  margin-bottom: 0;
+}
+
 h3,
 h4 {
   padding-top: 0.4em;
@@ -93,11 +96,12 @@ footer {
   justify-content: space-between;
   font-size: 1.3rem;
   text-align: center;
+  border-top: 1px solid var(--gold);
 }
 
 footer p {
   color: var(--gold);
-  padding: 4rem;
+  padding: 0 2rem;
 }
 
 nav {
@@ -132,6 +136,7 @@ ul {
 
 .lang a:hover {
   filter: saturate(100%);
+  transform: scale(1.1);
 }
 
 .lang-img {
@@ -150,10 +155,16 @@ ul {
   margin: 0.5rem;
 }
 
+.btn:hover {
+  border: 2px solid var(--white);
+  color: var(--gold);
+  transform: scale(1.05);
+}
+
 .btn-center {
   display: flex;
-  /* justify-content: center; */
   margin-top: 6vh;
+  justify-content: center;
 }
 
 .btn-form {
@@ -197,6 +208,10 @@ ul {
   border-radius: 2%;
 }
 
+.about-me__text {
+  text-align: left;
+}
+
 .skills__container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -210,14 +225,14 @@ ul {
   height: auto;
 }
 
-.icon {
+.skill-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* width: 5rem; */
 }
 
-.icon p {
+.skill-icon p {
   margin: 0.8em 0;
   color: var(--white);
 }
@@ -235,7 +250,7 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  transform: scale(0.8);
+  transform: scale(0.7);
 }
 
 .contact-icon {
@@ -253,7 +268,7 @@ ul {
 
 .contact-icons a:hover {
   color: var(--gold);
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .contact-icon img {
