@@ -1,7 +1,6 @@
-const navigation = document.querySelector('.navigation');
-
 // hamburger menu code
-const menuBtn = document.querySelector('.menu-btn');
+const navigation = document.querySelector('.navigation');
+const menuBtn = document.querySelector('.menu-btn__burger');
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
   if (!menuOpen) {
