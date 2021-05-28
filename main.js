@@ -1,11 +1,13 @@
 // hamburger menu code
 const navigation = document.querySelector('.navigation');
-const menuBtn = document.querySelector('.menu-btn__burger');
+const menuBtn = document.querySelector('.menu-btn__burger, .nav-item');
+const navItem = document.querySelector('.nav-item');
 let menuOpen = false;
+
 menuBtn.addEventListener('click', () => {
   if (!menuOpen) {
     menuBtn.classList.add('open');
-    navigation.classList.toggle('active');
+    navigation.classList.add('active');
     menuOpen = true;
   } else {
     menuBtn.classList.remove('open');
@@ -13,6 +15,12 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+
+function modifyMenu() {
+  menuBtn.classList.remove('open');
+  navigation.classList.remove('active');
+  menuOpen = false;
+}
 
 const currentDate = new Date();
 const year = currentDate.getFullYear();
