@@ -24,16 +24,16 @@
     max-width: 65vw;
     margin: 0 auto;
   }
-
-  .navbar {
-    border: none;
-  }
 }
 
 /* 768px */
 @media (min-width: 48em) {
   header {
     height: auto;
+  }
+
+  .navbar {
+    border: none;
   }
   .welcome-box {
     display: grid;
@@ -48,7 +48,7 @@
     align-items: center;
     justify-content: space-between;
     border-radius: 2%;
-    background: #85848b;
+    background: #ababab;
   }
 
   .puzzle {
@@ -86,5 +86,9 @@
 
   .reverse {
     flex-direction: row-reverse;
+  }
+
+  .svg {
+    display: block;
   }
 }

@@ -135,7 +135,7 @@ ul {
   margin-top: 7vh;
 }
 
-.puzzle {
+.svg {
   display: none;
 }
 
@@ -147,7 +147,7 @@ ul {
 
 .box__right {
   border-radius: 2%;
-  background: #85848b;
+  background: #ababab;
 }
 
 .heading-moto {
@@ -187,6 +187,7 @@ ul {
 .text-bottom {
   color: var(--gold);
   margin-top: 6vh;
+  max-width: 42ch;
 }
 
 .photo {
@@ -439,7 +440,6 @@ ul {
 
 .menu-btn__burger.open {
   position: fixed;
-  left: 2rem;
   top: 2rem;
 }
 
