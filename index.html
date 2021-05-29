@@ -7,9 +7,13 @@
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="puzzle-anim.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
     <title>Stanislaw Griszko | Front-End Developer</title>
   </head>
   <body>
@@ -44,24 +48,47 @@
             <a href="indexPL.html"><img class="lang-img" src="images/poland.png" alt="" /><a href=""></a>
           </div>
         </nav>
-        <h1 class="welcome-text">Hello<span class="yellow-dot">.</span></h1>
-        <h1>I am <span class="accent-text">a front-end developer</span></h1>
-        <h1>Stanisław</h1>
-        <p class="text-bottom">
-          Spending time on learning new things gives me great satisfaction. I
-          love to develop and I like what I do.
-        </p>
-        <div class="btn-center">
-          <a href="" class="btn btn-main">Contact</a>
-          <a href="" class="btn btn-main"> <img src="images/user.png" alt=""/>CV</a>
-        </div>
+        <section class="welcome-box">
+          <div class="box__left">
+            <h1 class="welcome-text">Hello<span class="yellow-dot">.</span></h1>
+            <div class="developer-text">
+              <div>
+                <h1>I am </h1>
+              </div>
+              <div class="front-end"><p class="accent-text">a front-end developer</p></div>
+            </div>
+            <h1>Stanisław</h1>
+            <p class="text-bottom">
+              Spending time on learning new things gives me great satisfaction. I
+              love to develop and I like what I do.
+            </p>
+            <div class="btn-center">
+              <a href="" class="btn btn-main">Contact</a>
+              <a href="" class="btn btn-main"> <img src="images/user.png" alt=""/>CV</a>
+            </div>
+          </div>
+          <div class="box__right">
+            <!-- <div class="row"> -->
+              <!-- <img src="images/left-top-puzzle.png" alt="">
+              <img src="images/right-top-puzzle.png" alt="">
+              <img src="images/left-bottom-puzzle.png" alt="">
+              <img src="images/right-bottom-puzzle.png" alt=""> -->
+              <!-- <div class="red"><img src="images/left-top-puzzle.png" alt=""></div>
+              <div class="blue"><img src="images/right-top-puzzle.png" alt=""></div>
+              <div class="green"><img src="images/left-bottom-puzzle.png" alt=""></div>
+              <div class="yellow"><img src="images/right-bottom-puzzle.png" alt=""></div>
+            </div> -->
+            <img src="images/puzzle.svg" alt="puzzle" class="puzzle">
+            <h1 class="heading-moto">Love to turn <br> <span class="yellow-text"><img src="images/bulb.png" alt="i" class="bulb">deas</span> into <span class="yellow-text">reality</span><span class="yellow-text">.</span></h1>
+          </div>
+        </section>
       </div>
       
     </header>
     <main>
       <section class="about-me_section" id="tech">
         <div class="about-me__container">
-          <img src="images/photo.png" class="photo" alt="my photo">
+          <img src="images/main-photo.jpg" class="photo" alt="my photo">
           <div>
             <h2>About Me</h2>
             <p class="about-me__text">Hi there, My name is Stanisław I live in Poland. I'm interested in
@@ -129,7 +156,7 @@
         <p>which I created</p>
         <div class="portfolio-projects__container" >
           <div class="projects-image project__one">
-            <img src="images/datepet2.png" alt="" />
+            <img src="images/date.png" alt="" />
           </div>
           <div class="project-description">
             <h3>DatePet</h3>
@@ -143,7 +170,7 @@
         </div>
           <div class="portfolio-projects__container reverse">
             <div class="projects-image">
-              <img src="images/energy2.png" alt="" />
+              <img src="images/feel.png" alt="" />
             </div>
             <div class="project-description">
               <h3>SoundEnergy</h3>
@@ -158,7 +185,7 @@
           </div>
           <div class="portfolio-projects__container">
             <div class="projects-image">
-              <img src="images/photographer-portfolio2.png" alt="" />
+              <img src="images/port.png" alt="" />
             </div>
             <div class="project-description">
               <h3>Photographer portfolio</h3>
@@ -172,7 +199,7 @@
           </div>
           <div class="portfolio-projects__container reverse">
             <div class="projects-image">
-              <img src="images/game2.png" alt="" />
+              <img src="images/game (1).png" alt="" />
             </div>
             <div class="project-description">
               <h3>Rock, Paper, Scissors Game</h3>

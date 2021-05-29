@@ -1,0 +1,90 @@
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 49%;
+  }
+}
+
+/* 1025px */
+@media (min-width: 64.06em) {
+  main,
+  header {
+    max-width: 65vw;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    border: none;
+  }
+}
+
+/* 768px */
+@media (min-width: 48em) {
+  header {
+    height: auto;
+  }
+  .welcome-box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
+    text-align: left;
+  }
+
+  .box__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2%;
+    background: #85848b;
+  }
+
+  .puzzle {
+    padding-top: 0.5em;
+    display: block;
+    width: 70%;
+  }
+
+  .heading-moto {
+    /* color: black; */
+    text-align: end;
+    margin: 0.2em 0.3em;
+  }
+
+  .developer-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-me__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me_section,
+  .contact_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio-projects__container {
+    display: flex;
+    align-items: center;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}
