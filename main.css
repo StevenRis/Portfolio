@@ -394,7 +394,6 @@ ul {
 .navigation ul {
   display: flex;
   justify-content: center;
-  /* align-items: flex-start; */
   flex-direction: column;
   z-index: 1;
   transform: translateX(-350px);
