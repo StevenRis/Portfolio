@@ -12,6 +12,14 @@
   --white: #d3d3d4;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gold);
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; /*10px*/
