@@ -12,11 +12,11 @@
   --white: #d3d3d4;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 0.5rem;
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background-color: var(--gold);
 }
 
