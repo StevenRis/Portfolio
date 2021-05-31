@@ -19,13 +19,44 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
-function modifyMenu() {
+function menuLinks() {
   menuBtn.classList.remove('open');
   navigation.classList.remove('active');
   socialIcons.classList.remove('active');
   menuOpen = false;
 }
 
+// copyright year
 const currentDate = new Date();
 const year = currentDate.getFullYear();
 document.getElementById('year').innerHTML = '&#169;Copyright ' + year;
+
+// send form
+const btn = document.getElementById('button');
+const popUp = document.querySelector('.popup-container');
+
+document.getElementById('form').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const serviceID = 'default_service';
+  const templateID = 'template_8eadzxr';
+
+  function sent() {
+    popUp.classList.add('send');
+    document.getElementById('form').reset();
+  }
+
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      sent();
+
+      function removeClass() {
+        popUp.classList.remove('send');
+      }
+      setTimeout(removeClass, 3000);
+    },
+    (err) => {
+      alert(JSON.stringify(err));
+    }
+  );
+});

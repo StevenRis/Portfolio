@@ -33,10 +33,10 @@
           <span style="--i:2;"></span>
           <span style="--i:3;"></span>
           <ul>
-            <li><a href="/" class="nav-item" onclick="modifyMenu()">Home</a></li>
-            <li><a href="#tech" class="nav-item" onclick="modifyMenu()">Technologies</a></li>
-            <li><a href="#projects" class="nav-item" onclick="modifyMenu()">Projects</a></li>
-            <li><a href="#contact" class="nav-item" onclick="modifyMenu()">Contact</a></li>
+            <li><a href="/" class="nav-item" onclick="menuLinks()">Home</a></li>
+            <li><a href="#tech" class="nav-item" onclick="menuLinks()">Technologies</a></li>
+            <li><a href="#projects" class="nav-item" onclick="menuLinks()">Projects</a></li>
+            <li><a href="#contact" class="nav-item" onclick="menuLinks()">Contact</a></li>
           </ul>
           <div class="social-icons">
             <a href="https://www.facebook.com/profile.php?id=100014849559908" target="_blank"><img src="images/facebook (1).png" alt=""></a>
@@ -64,7 +64,7 @@
               love to develop and I like what I do.
             </p>
             <div class="btn-center">
-              <a href="" class="btn btn-main">Contact</a>
+              <a href="#contact" class="btn btn-main">Contact</a>
               <a href="" class="btn btn-main"> <img src="images/user.png" alt=""/>CV</a>
             </div>
           </div>
@@ -234,35 +234,36 @@
         </div>
       </section>
       <section class="contact_section" id="contact">
-        <div class="contact-form">
+        <form class="contact-form" id="form"">
           <h2>Get in touch</h2>
           <p class="p__text">Message me</p>
           <div class="form-input">
-            <input type="text" name="name" autocomplete="off" required />
-            <label for="name" class="label-name">
+            <input type="text" name="from_name" id="from_name" autocomplete="off" value="" required />
+            <label for="from_name" class="label-name">
               <span class="content-name">Full Name</span>
             </label>
           </div>
           <div class="form-input">
-            <input type="text" name="email" autocomplete="off" required />
-            <label for="email" class="label-name">
+            <input type="text" name="reply_to" id="reply_to" autocomplete="off" value="" required />
+            <label for="reply_to" class="label-name">
               <span class="content-name">Email</span>
             </label>
           </div>
           <div class="form-input">
-            <input type="text" name="phone" autocomplete="off" required />
+            <input type="text" name="phone" id="phone" autocomplete="off" value="" required />
             <label for="phone" class="label-name">
               <span class="content-name">Phone</span>
             </label>
           </div>
           <div class="form-input">
-            <input type="text" name="message" autocomplete="off" required />
+            <input type="text" name="message" id="message" autocomplete="off" value="" required />
             <label for="message" class="label-name">
               <span class="content-name">Your Message</span>
             </label>
           </div>
-          <a class="btn btn-form" href=""><img src="images/send-mail.png" alt="" value="Send" type="submit"/>Send</a>
-        </div>
+          <!-- <a class="btn btn-form" id="button" value="Send Email" type="submit"><img src="images/send-mail.png" alt="" />Send</a> -->
+          <button class="btn btn-form" id="button" value="Send Email" type="submit"><img src="images/send-mail.png" alt="" />Send</button>
+        </form>
         <section class="contact-information">
           <div class="contact-icons" >
             <div class="contact-icon">
@@ -281,9 +282,24 @@
           </div>
         </section>
       </section>
+      <section class="popup">
+        <div class="popup-container">
+          <h2>Your message has been sent!</h2>
+        </div>
+      </section>
+
     </main>
     <footer><p id="year"></p>
     <p>Created by StevenRi</p></footer>
     <script src="main.js"></script>
+    <script src="http://smtpjs.com/v3/smtp.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init('user_MeiF1bYPoZ1clXhDQgEev');
+    </script>
   </body>
 </html>

@@ -322,7 +322,8 @@ ul {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.contact-form label::after {
+.contact-form label::after,
+.contact-form textarea::after {
   content: '';
   position: absolute;
   left: 0;

@@ -23,11 +23,31 @@
 
 .btn-form {
   margin-top: 3vh;
+  cursor: pointer;
+  background: var(--black);
+  outline: none;
 }
 
 .btn img {
   width: 1.5rem;
   margin-right: 0.5em;
+}
+
+.popup-container {
+  display: none;
+}
+
+.popup-container.send {
+  display: block;
+  position: fixed;
+  width: 35vh;
+  height: 15vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--gold);
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 40rem) {
