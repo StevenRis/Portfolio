@@ -22,6 +22,7 @@ menuBtn.addEventListener('click', () => {
 function modifyMenu() {
   menuBtn.classList.remove('open');
   navigation.classList.remove('active');
+  socialIcons.classList.remove('active');
   menuOpen = false;
 }
 
