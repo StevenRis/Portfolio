@@ -1,30 +1,39 @@
-// hamburger menu code
+'use strict';
+
 const navigation = document.querySelector('.navigation');
 const menuBtn = document.querySelector('.menu-btn__burger, .nav-item');
 const navItem = document.querySelector('.nav-item');
 const socialIcons = document.querySelector('.social-icons');
 let menuOpen = false;
 
-menuBtn.addEventListener('click', () => {
-  if (!menuOpen) {
-    menuBtn.classList.add('open');
-    navigation.classList.add('active');
-    socialIcons.classList.add('active');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    navigation.classList.remove('active');
-    socialIcons.classList.remove('active');
-    menuOpen = false;
-  }
-});
+function openBurgerMenu() {
+  menuBtn.classList.add('open');
+  navigation.classList.add('active');
+  socialIcons.classList.add('active');
+  menuOpen = true;
+}
 
-function menuLinks() {
+function closeBurgerMenu() {
   menuBtn.classList.remove('open');
   navigation.classList.remove('active');
   socialIcons.classList.remove('active');
   menuOpen = false;
 }
+
+menuBtn.addEventListener('click', () => {
+  if (!menuOpen) {
+    openBurgerMenu();
+  } else {
+    closeBurgerMenu();
+  }
+});
+
+const nav = document.querySelector('ul'),
+  navItems = document.querySelectorAll('li');
+
+nav.addEventListener('click', () => {
+  navItems.forEach(() => closeBurgerMenu());
+});
 
 // copyright year
 const currentDate = new Date();
