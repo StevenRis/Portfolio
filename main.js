@@ -19,17 +19,10 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
-function menuLinks() {
-  menuBtn.classList.remove('open');
-  navigation.classList.remove('active');
-  socialIcons.classList.remove('active');
-  menuOpen = false;
-}
-
 // copyright year
 const currentDate = new Date();
 const year = currentDate.getFullYear();
-document.getElementById('year').innerHTML = '&#169;Copyright ' + year;
+document.getElementById('year').innerHTML = '&#169; Copyright 2020 - ' + year;
 
 // send form
 const btn = document.getElementById('button');
