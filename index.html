@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="media-query.css" />
-    <link rel="stylesheet" href="buttons.css" />
-    <link rel="stylesheet" href="svg-anim.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media-query.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/svg-anim.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -66,10 +66,10 @@
           </div>
         </section>
         <div class="lang">
-          <a href="" style="margin-right: 10px">
+          <a href="/" style="margin-right: 10px">
             <img class="lang-img" src="images/america.png" alt="" />
           </a>
-          <a href="">
+          <a href="/">
             <img class="lang-img lang-pl" src="images/poland.png" alt="" />
           </a>
           <!-- <a href="indexPL.html"
@@ -456,6 +456,7 @@
               autocomplete="off"
               value=""
               required
+              class="_req"
             />
             <label for="from_name" class="label-name">
               <span class="content-name name">Full Name</span>
@@ -469,6 +470,7 @@
               autocomplete="off"
               value=""
               required
+              class="_req"
             />
             <label for="reply_to" class="label-name">
               <span class="content-name email">Email</span>
@@ -482,6 +484,7 @@
               autocomplete="off"
               value=""
               required
+              class="_req"
             />
             <label for="phone" class="label-name">
               <span class="content-name phone">Phone</span>
@@ -495,8 +498,9 @@
               autocomplete="off"
               value=""
               required
+              class="_req"
             />
-            <label for="message" class="label-name">
+            <label for="message" class="label-name" class="_req">
               <span class="content-name message">Your Message</span>
             </label>
           </div>
@@ -508,7 +512,7 @@
             type="submit"
           >
             <img src="images/send-mail.png" alt="" />
-            Send
+            <span>Send</span>
           </button>
         </form>
         <section class="contact-information">
@@ -556,15 +560,19 @@
       <p id="year"></p>
       <p>Created by StevenRi</p>
     </footer>
-    <script src="main.js"></script>
-    <script src="http://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="js/main.js"></script>
+    <!-- <script src="js/history.js"></script> -->
+
     <script
       type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
 
     <script type="text/javascript">
       emailjs.init('user_MeiF1bYPoZ1clXhDQgEev');
     </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
