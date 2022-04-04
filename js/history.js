@@ -1,5 +1,8 @@
 'use strict';
 
+//
+// testing history api
+//
 const lang = document.querySelector('.lang-pl');
 
 // if (!location.hash) {
