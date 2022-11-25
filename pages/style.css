@@ -30,6 +30,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
   background: var(--black);
+  color: var(--white)
 }
 
 header {
@@ -138,6 +139,49 @@ ul {
 
 .svg {
   display: none;
+}
+
+svg {
+  width: 15em;
+  height: 15em;
+}
+
+@media (min-width: 1441px) {
+  svg {
+    width: 25em;
+    height: 25em;
+  }
+}
+
+#logo {
+  transform: translate(0%, 0%);
+}
+
+#logo path:nth-child(1) {
+  transform: translate(-55%, 55%);
+  animation: anim 1.5s ease forwards;
+}
+#logo path:nth-child(2) {
+  transform: translate(-55%, -55%);
+  animation: anim 2.5s ease 0.3s forwards;
+}
+#logo path:nth-child(3) {
+  transform: translate(55%, -55%);
+  animation: anim 2.3s ease 0.6s forwards;
+}
+#logo path:nth-child(4) {
+  transform: translate(55%, 55%);
+  animation: anim 2s ease 0.9s forwards;
+}
+#logo path:nth-child(5) {
+  transform: translate(55%, 55%);
+  animation: anim 2s ease 1.2s forwards;
+}
+
+@keyframes anim {
+  to {
+    transform: translate(0, 0);
+  }
 }
 
 .developer-text {
@@ -494,4 +538,177 @@ ul {
 .menu-btn__burger.open .bar3 {
   transform: rotate(45deg) translate(-7px, -8px);
   background-color: var(--black);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  border: 2px solid var(--gold);
+  border-radius: 20px;
+  color: var(--white);
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+.btn:hover {
+  border: 2px solid var(--white);
+  color: var(--gold);
+}
+
+.btn-center {
+  display: flex;
+  margin-top: 6vh;
+  justify-content: center;
+}
+
+.btn-main {
+  width: 100px;
+  text-align: center;
+}
+
+.btn-form {
+  font-size: 1em;
+  margin-top: 3vh;
+  cursor: pointer;
+  background: var(--black);
+  outline: none;
+}
+
+.btn img {
+  width: 1.5rem;
+  margin-right: 0.5em;
+}
+
+.popup-container {
+  display: none;
+}
+
+.popup-container.send {
+  display: block;
+  position: fixed;
+  width: 35vh;
+  height: 15vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--gold);
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 40rem) {
+  .btn-center {
+    justify-content: left;
+  }
+}
+
+
+
+/* Media-quaries */
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 49%;
+  }
+}
+
+/* 1025px */
+@media (min-width: 64.06em) {
+  main,
+  header {
+    max-width: 65vw;
+    margin: 0 auto;
+  }
+}
+
+/* 768px */
+@media (min-width: 48em) {
+  header {
+    height: auto;
+  }
+
+  .navbar {
+    border: none;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
+    text-align: left;
+  }
+
+  .box__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2%;
+    background: #ababab;
+  }
+
+  .puzzle {
+    padding-top: 0.5em;
+    display: block;
+    width: 70%;
+  }
+
+  .heading-moto {
+    color: black;
+    text-align: end;
+    margin: 0.2em 0.3em;
+    opacity: 0;
+    animation: opacity 3s ease-in forwards 1s;
+  }
+
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .developer-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-me__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me_section,
+  .contact_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio-projects__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .reverse {
+    direction: rtl;
+  }
+
+  .svg {
+    display: block;
+  }
 }
