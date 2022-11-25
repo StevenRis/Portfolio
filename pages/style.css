@@ -285,6 +285,7 @@ svg {
 }
 
 .contact-information {
+  padding: 1em 1.5em 0;
   place-self: center;
 }
 
