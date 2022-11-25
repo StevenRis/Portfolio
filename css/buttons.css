@@ -12,13 +12,17 @@
 .btn:hover {
   border: 2px solid var(--white);
   color: var(--gold);
-  transform: scale(1.05);
 }
 
 .btn-center {
   display: flex;
   margin-top: 6vh;
   justify-content: center;
+}
+
+.btn-main {
+  width: 100px;
+  text-align: center;
 }
 
 .btn-form {

@@ -2,27 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/media-query.css" />
-    <link rel="stylesheet" href="css/buttons.css" />
-    <link rel="stylesheet" href="css/svg-anim.css" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/svg-anim.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Stanislaw Griszko | Front-End Developer</title>
   </head>
   <body>
-    <header class="header preloader">
-      <nav class="navbar" id="home">
-        <!-- hamburger menu -->
+    <header>
+      <nav class="navbar">
         <div class="menu-btn">
           <div class="menu-btn__burger">
             <div class="bar1"></div>
@@ -36,7 +29,9 @@
           <span style="--i: 2"></span>
           <span style="--i: 3"></span>
           <ul>
-            <li><a href="#home" class="nav-item">Home</a></li>
+            <li>
+              <a href="#home" class="nav-item">Home</a>
+            </li>
             <li>
               <a href="#tech" class="nav-item">Technologies</a>
             </li>
@@ -48,38 +43,19 @@
             </li>
           </ul>
           <div class="social-icons">
-            <a
-              href="https://www.facebook.com/profile.php?id=100014849559908"
-              target="_blank"
-              ><img src="images/facebook-img.png" alt=""
-            /></a>
-            <a
-              href="https://github.com/StevenRis?tab=repositories"
-              target="_blank"
-              ><img src="images/github-img.png" alt=""
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/stanis%C5%82aw-griszko-b8a595122/"
-              target="_blank"
-              ><img src="images/linkedin-logo.png" alt=""
-            /></a>
+            <a href="https://www.facebook.com/profile.php?id=100014849559908" target="_blank" ><img src="images/facebook-img.png" alt="facebook icon"></a>
+            <a href="https://github.com/StevenRis?tab=repositories" target="_blank" ><img src="images/github-img.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/stanis%C5%82aw-griszko-b8a595122/" target="_blank" ><img src="images/linkedin-logo.png" alt=""></a>
           </div>
         </section>
-        <div class="lang">
-          <a href="/" style="margin-right: 10px">
-            <img class="lang-img" src="images/america.png" alt="" />
-          </a>
-          <a href="/">
-            <img class="lang-img lang-pl" src="images/poland.png" alt="" />
-          </a>
-          <!-- <a href="indexPL.html"
-            ><img class="lang-img" src="images/poland.png" alt=""
-          /></a> -->
+        <div class="language">
+          <a href="/" style="margin-right: 10px"><img class="language-img" src="images/america.png" alt="change language - english" width="40px"></a>
+          <a href="indexPL.html"><img class="language-img language-pl" src="images/poland.png" alt="change language - polish" width="40px"></a>
         </div>
       </nav>
-      <section class="welcome-box">
-        <div class="box__left">
-          <h1 class="welcome-text">Hello<span class="yellow-dot">.</span></h1>
+      <section class="hero">
+        <div class="box__left hero__left-side">
+          <h1 class="hero-text">Hello<span class="yellow-dot">.</span></h1>
           <div class="developer-text">
             <div>
               <h1>I am</h1>
@@ -89,146 +65,100 @@
             </div>
           </div>
           <h1>Stanisław</h1>
-          <p class="text-bottom">
-            I help companies to develop digital products and turn ideas into a
-            functional and delightful experience. <br />
-            Let's make together something great!
-          </p>
+          <p class="text-bottom">I help companies to develop digital products and turn ideas into a functional and delightful experience. <br/>Let's make together something great!</p>
           <div class="btn-center">
             <a href="#contact" class="btn btn-main">Contact</a>
-            <a
-              href="https://drive.google.com/file/d/1N7bdQdll8_377gdmek5BZkOVEzoLpOFh/view?usp=sharing"
-              target="_blank"
-              class="btn btn-main"
-            >
-              <img src="images/user.png" alt="" />CV</a
-            >
+            <a href="https://drive.google.com/file/d/1N7bdQdll8_377gdmek5BZkOVEzoLpOFh/view?usp=sharing" target="_blank" class="btn btn-main">CV</a>
           </div>
         </div>
-        <div class="box__right">
+        <div class="box__right hero__right-side">
           <div class="svg">
-            <svg
-              id="logo"
-              width="632"
-              height="632"
-              viewBox="0 0 632 632"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg id="logo" width="632" height="632" viewBox="0 0 632 632" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
-                <path
-                  d="M466.254 452.433L415.738 401.917C412.79 398.968 408.328 398.155 404.531 399.888C400.734 401.606 398.407 405.502 398.69 409.66C399.235 417.714 396.279 425.605 390.587 431.297C385.05 436.834 377.696 439.733 369.868 439.457C362.048 439.189 354.892 435.766 349.723 429.819C340.559 419.298 340.651 403.494 349.921 393.05C355.712 386.523 364.035 383.108 372.739 383.695C376.897 383.978 380.793 381.651 382.511 377.854C384.237 374.064 383.424 369.588 380.482 366.647L329.966 316.131L315.824 301.989L301.682 316.131L279.203 338.61L264.771 353.042C262.395 347.201 258.86 341.827 254.299 337.266C244.937 327.904 231.983 322.799 218.738 323.258C205.318 323.725 193.049 329.587 184.196 339.755C168.463 357.836 168.598 384.996 184.522 402.928C189.5 408.543 195.574 412.806 202.263 415.536L195.948 421.85L165.366 452.433L151.224 466.575L280.455 595.806C299.95 615.301 331.67 615.301 351.165 595.806L480.396 466.575L466.254 452.433ZM452.112 466.575L337.023 581.664C325.328 593.359 306.292 593.359 294.597 581.664L179.515 466.582L230.031 416.066C232.98 413.118 233.793 408.656 232.06 404.859C230.335 401.069 226.439 398.742 222.288 399.018C213.584 399.605 205.268 396.197 199.47 389.663C190.2 379.219 190.122 363.415 199.272 352.893C204.448 346.954 211.597 343.524 219.417 343.255C227.245 342.98 234.606 345.886 240.136 351.415C245.828 357.108 248.783 364.999 248.239 373.053C247.956 377.211 250.283 381.107 254.08 382.825C257.87 384.55 262.346 383.737 265.287 380.796L315.803 330.28L352.693 367.17C345.996 369.906 339.93 374.163 334.951 379.778C319.027 397.71 318.893 424.87 334.626 442.95C343.479 453.119 355.747 458.981 369.161 459.44C382.398 459.893 395.36 454.794 404.722 445.432C409.283 440.872 412.818 435.498 415.194 429.657L452.112 466.575Z"
-                  fill="black"
+                <path d="M466.254 452.433L415.738 401.917C412.79 398.968 408.328 398.155 404.531 399.888C400.734 401.606 398.407 405.502 398.69 409.66C399.235 417.714 396.279 425.605 390.587 431.297C385.05 436.834 377.696 439.733 369.868 439.457C362.048 439.189 354.892 435.766 349.723 429.819C340.559 419.298 340.651 403.494 349.921 393.05C355.712 386.523 364.035 383.108 372.739 383.695C376.897 383.978 380.793 381.651 382.511 377.854C384.237 374.064 383.424 369.588 380.482 366.647L329.966 316.131L315.824 301.989L301.682 316.131L279.203 338.61L264.771 353.042C262.395 347.201 258.86 341.827 254.299 337.266C244.937 327.904 231.983 322.799 218.738 323.258C205.318 323.725 193.049 329.587 184.196 339.755C168.463 357.836 168.598 384.996 184.522 402.928C189.5 408.543 195.574 412.806 202.263 415.536L195.948 421.85L165.366 452.433L151.224 466.575L280.455 595.806C299.95 615.301 331.67 615.301 351.165 595.806L480.396 466.575L466.254 452.433ZM452.112 466.575L337.023 581.664C325.328 593.359 306.292 593.359 294.597 581.664L179.515 466.582L230.031 416.066C232.98 413.118 233.793 408.656 232.06 404.859C230.335 401.069 226.439 398.742 222.288 399.018C213.584 399.605 205.268 396.197 199.47 389.663C190.2 379.219 190.122 363.415 199.272 352.893C204.448 346.954 211.597 343.524 219.417 343.255C227.245 342.98 234.606 345.886 240.136 351.415C245.828 357.108 248.783 364.999 248.239 373.053C247.956 377.211 250.283 381.107 254.08 382.825C257.87 384.55 262.346 383.737 265.287 380.796L315.803 330.28L352.693 367.17C345.996 369.906 339.93 374.163 334.951 379.778C319.027 397.71 318.893 424.87 334.626 442.95C343.479 453.119 355.747 458.981 369.161 459.44C382.398 459.893 395.36 454.794 404.722 445.432C409.283 440.872 412.818 435.498 415.194 429.657L452.112 466.575Z" fill="black"
                 />
-                <path
-                  d="M179.515 466.582L230.031 416.066C232.98 413.118 233.793 408.656 232.06 404.859C230.342 401.061 226.446 398.735 222.288 399.018C214.234 399.562 206.343 396.607 200.651 390.914C195.114 385.378 192.215 378.024 192.491 370.196C192.759 362.376 196.182 355.22 202.129 350.051C212.65 340.887 228.454 340.979 238.898 350.249C245.425 356.04 248.84 364.363 248.253 373.067C247.97 377.225 250.297 381.121 254.094 382.839C257.884 384.565 262.36 383.751 265.301 380.81L315.817 330.294L329.959 316.152L315.817 302.01L293.338 279.531L278.906 265.099C284.747 262.723 290.121 259.188 294.682 254.627C304.044 245.265 309.149 232.31 308.69 219.066C308.223 205.645 302.361 193.377 292.193 184.524C274.112 168.791 246.952 168.925 229.02 184.849C223.405 189.827 219.142 195.902 216.412 202.591L210.098 196.276L179.515 165.694L165.373 151.552L36.1423 280.783C16.6474 300.278 16.6474 331.998 36.1423 351.493L165.373 480.724L179.515 466.582ZM165.373 452.44L50.2844 337.351C38.5889 325.656 38.5889 306.62 50.2844 294.925L165.373 179.836L215.889 230.352C218.837 233.3 223.299 234.114 227.096 232.381C230.887 230.656 233.213 226.76 232.937 222.609C232.35 213.904 235.759 205.589 242.292 199.791C252.736 190.52 268.54 190.443 279.062 199.593C285.001 204.769 288.431 211.917 288.7 219.738C288.975 227.566 286.069 234.927 280.54 240.456C274.847 246.149 266.956 249.104 258.902 248.56C254.744 248.277 250.848 250.603 249.13 254.4C247.405 258.191 248.218 262.667 251.159 265.608L301.675 316.124L264.785 353.014C262.049 346.317 257.792 340.25 252.178 335.272C234.245 319.348 207.085 319.214 189.005 334.947C178.836 343.8 172.975 356.068 172.515 369.482C172.062 382.719 177.161 395.68 186.523 405.042C191.084 409.603 196.458 413.139 202.298 415.515L165.373 452.44Z"
-                  fill="black"
-                />
-
-                <path
-                  d="M165.55 179.659L216.066 230.175C219.014 233.124 223.476 233.937 227.273 232.204C231.07 230.486 233.397 226.59 233.114 222.432C232.569 214.378 235.525 206.487 241.217 200.795C246.754 195.258 254.108 192.359 261.936 192.635C269.756 192.903 276.912 196.326 282.081 202.272C291.245 212.794 291.153 228.598 281.883 239.042C276.092 245.569 267.769 248.984 259.065 248.397C254.907 248.114 251.011 250.441 249.293 254.238C247.567 258.028 248.38 262.504 251.322 265.445L301.838 315.961L315.98 330.103L330.122 315.961L352.601 293.482L367.033 279.05C369.409 284.891 372.944 290.265 377.505 294.826C386.867 304.188 399.821 309.293 413.066 308.833C426.486 308.367 438.755 302.505 447.608 292.337C463.341 274.256 463.207 247.096 447.282 229.164C442.304 223.549 436.23 219.285 429.541 216.556L435.856 210.242L466.431 179.666L480.573 165.524L351.342 36.2933C331.847 16.7984 300.126 16.7984 280.632 36.2933L151.408 165.517L165.55 179.659ZM179.692 165.517L294.781 50.4284C306.476 38.7329 325.512 38.7329 337.207 50.4284L452.296 165.517L401.78 216.033C398.831 218.981 398.018 223.443 399.751 227.24C401.476 231.031 405.372 233.357 409.523 233.081C418.227 232.494 426.543 235.903 432.341 242.436C441.611 252.88 441.689 268.684 432.539 279.206C427.363 285.145 420.214 288.575 412.394 288.844C404.566 289.119 397.205 286.213 391.676 280.684C385.983 274.991 383.028 267.1 383.572 259.046C383.855 254.888 381.529 250.992 377.731 249.274C373.941 247.549 369.465 248.362 366.524 251.303L316.008 301.819L279.118 264.929C285.815 262.193 291.882 257.936 296.86 252.322C312.784 234.389 312.918 207.229 297.185 189.149C288.332 178.98 276.064 173.118 262.65 172.659C249.413 172.206 236.452 177.305 227.089 186.667C222.529 191.227 218.993 196.602 216.617 202.442L179.692 165.517Z"
-                  fill="black"
-                />
-                <path
-                  d="M566.21 280.182L581.328 295.3C593.045 307.017 593.045 326.01 581.328 337.726L466.247 452.808L415.936 402.497C413.369 399.931 409.621 398.743 406.107 399.683C401.384 400.942 398.35 405.319 398.675 410.028C399.262 418.733 395.854 427.048 389.32 432.846C378.876 442.117 363.073 442.194 352.551 433.044C346.611 427.868 343.182 420.72 342.913 412.899C342.637 405.071 345.543 397.71 351.073 392.181C356.765 386.489 364.657 383.533 372.71 384.077C375.065 384.24 377.448 383.681 379.315 382.225C384.519 378.138 384.547 371.123 380.46 367.036L329.945 316.52L366.834 279.631C369.571 286.327 373.828 292.394 379.442 297.372C397.374 313.296 424.534 313.43 442.615 297.697C452.783 288.844 458.645 276.576 459.105 263.162C459.557 249.925 454.459 236.964 445.097 227.602C440.536 223.041 435.162 219.505 429.321 217.129L466.232 180.218L502.564 216.55C506.467 220.453 512.802 220.453 516.706 216.55C520.609 212.646 520.609 206.311 516.706 202.407L466.232 151.934L452.09 166.076L401.794 216.373C399.22 218.947 398.039 222.687 398.972 226.195C400.231 230.918 404.608 233.951 409.324 233.633C417.378 233.089 425.27 236.044 430.962 241.737C436.499 247.273 439.398 254.627 439.122 262.455C438.853 270.276 435.431 277.431 429.484 282.6C418.962 291.765 403.159 291.673 392.715 282.402C386.252 276.661 382.836 268.437 383.345 259.824C383.522 256.833 382.575 253.849 380.418 251.778C376.26 247.804 370.059 248.094 366.311 251.841L315.795 302.357L301.653 316.499L315.795 330.641L338.274 353.12L352.706 367.552C346.866 369.928 341.492 373.464 336.931 378.024C327.569 387.387 322.463 400.341 322.923 413.585C323.39 427.006 329.252 439.274 339.42 448.127C357.501 463.86 384.661 463.726 402.593 447.802C408.207 442.824 412.471 436.75 415.201 430.06L421.515 436.375L452.09 466.95L466.232 481.092L595.463 351.862C614.986 332.338 614.986 300.674 595.463 281.151L580.345 266.033C576.442 262.13 570.106 262.13 566.203 266.033C562.307 269.943 562.307 276.279 566.21 280.182Z"
-                  fill="#f9b233"
-                />
-                <path
-                  d="M549.233 247.677C553.138 243.771 553.138 237.44 549.233 233.534C545.327 229.629 538.996 229.629 535.09 233.534C531.185 237.44 531.185 243.771 535.09 247.677C538.996 251.582 545.327 251.582 549.233 247.677Z"
-                  fill="#f9b233"
-                />
+                <path d="M179.515 466.582L230.031 416.066C232.98 413.118 233.793 408.656 232.06 404.859C230.342 401.061 226.446 398.735 222.288 399.018C214.234 399.562 206.343 396.607 200.651 390.914C195.114 385.378 192.215 378.024 192.491 370.196C192.759 362.376 196.182 355.22 202.129 350.051C212.65 340.887 228.454 340.979 238.898 350.249C245.425 356.04 248.84 364.363 248.253 373.067C247.97 377.225 250.297 381.121 254.094 382.839C257.884 384.565 262.36 383.751 265.301 380.81L315.817 330.294L329.959 316.152L315.817 302.01L293.338 279.531L278.906 265.099C284.747 262.723 290.121 259.188 294.682 254.627C304.044 245.265 309.149 232.31 308.69 219.066C308.223 205.645 302.361 193.377 292.193 184.524C274.112 168.791 246.952 168.925 229.02 184.849C223.405 189.827 219.142 195.902 216.412 202.591L210.098 196.276L179.515 165.694L165.373 151.552L36.1423 280.783C16.6474 300.278 16.6474 331.998 36.1423 351.493L165.373 480.724L179.515 466.582ZM165.373 452.44L50.2844 337.351C38.5889 325.656 38.5889 306.62 50.2844 294.925L165.373 179.836L215.889 230.352C218.837 233.3 223.299 234.114 227.096 232.381C230.887 230.656 233.213 226.76 232.937 222.609C232.35 213.904 235.759 205.589 242.292 199.791C252.736 190.52 268.54 190.443 279.062 199.593C285.001 204.769 288.431 211.917 288.7 219.738C288.975 227.566 286.069 234.927 280.54 240.456C274.847 246.149 266.956 249.104 258.902 248.56C254.744 248.277 250.848 250.603 249.13 254.4C247.405 258.191 248.218 262.667 251.159 265.608L301.675 316.124L264.785 353.014C262.049 346.317 257.792 340.25 252.178 335.272C234.245 319.348 207.085 319.214 189.005 334.947C178.836 343.8 172.975 356.068 172.515 369.482C172.062 382.719 177.161 395.68 186.523 405.042C191.084 409.603 196.458 413.139 202.298 415.515L165.373 452.44Z" fill="black"/>
+                <path d="M165.55 179.659L216.066 230.175C219.014 233.124 223.476 233.937 227.273 232.204C231.07 230.486 233.397 226.59 233.114 222.432C232.569 214.378 235.525 206.487 241.217 200.795C246.754 195.258 254.108 192.359 261.936 192.635C269.756 192.903 276.912 196.326 282.081 202.272C291.245 212.794 291.153 228.598 281.883 239.042C276.092 245.569 267.769 248.984 259.065 248.397C254.907 248.114 251.011 250.441 249.293 254.238C247.567 258.028 248.38 262.504 251.322 265.445L301.838 315.961L315.98 330.103L330.122 315.961L352.601 293.482L367.033 279.05C369.409 284.891 372.944 290.265 377.505 294.826C386.867 304.188 399.821 309.293 413.066 308.833C426.486 308.367 438.755 302.505 447.608 292.337C463.341 274.256 463.207 247.096 447.282 229.164C442.304 223.549 436.23 219.285 429.541 216.556L435.856 210.242L466.431 179.666L480.573 165.524L351.342 36.2933C331.847 16.7984 300.126 16.7984 280.632 36.2933L151.408 165.517L165.55 179.659ZM179.692 165.517L294.781 50.4284C306.476 38.7329 325.512 38.7329 337.207 50.4284L452.296 165.517L401.78 216.033C398.831 218.981 398.018 223.443 399.751 227.24C401.476 231.031 405.372 233.357 409.523 233.081C418.227 232.494 426.543 235.903 432.341 242.436C441.611 252.88 441.689 268.684 432.539 279.206C427.363 285.145 420.214 288.575 412.394 288.844C404.566 289.119 397.205 286.213 391.676 280.684C385.983 274.991 383.028 267.1 383.572 259.046C383.855 254.888 381.529 250.992 377.731 249.274C373.941 247.549 369.465 248.362 366.524 251.303L316.008 301.819L279.118 264.929C285.815 262.193 291.882 257.936 296.86 252.322C312.784 234.389 312.918 207.229 297.185 189.149C288.332 178.98 276.064 173.118 262.65 172.659C249.413 172.206 236.452 177.305 227.089 186.667C222.529 191.227 218.993 196.602 216.617 202.442L179.692 165.517Z" fill="black"/>
+                <path d="M566.21 280.182L581.328 295.3C593.045 307.017 593.045 326.01 581.328 337.726L466.247 452.808L415.936 402.497C413.369 399.931 409.621 398.743 406.107 399.683C401.384 400.942 398.35 405.319 398.675 410.028C399.262 418.733 395.854 427.048 389.32 432.846C378.876 442.117 363.073 442.194 352.551 433.044C346.611 427.868 343.182 420.72 342.913 412.899C342.637 405.071 345.543 397.71 351.073 392.181C356.765 386.489 364.657 383.533 372.71 384.077C375.065 384.24 377.448 383.681 379.315 382.225C384.519 378.138 384.547 371.123 380.46 367.036L329.945 316.52L366.834 279.631C369.571 286.327 373.828 292.394 379.442 297.372C397.374 313.296 424.534 313.43 442.615 297.697C452.783 288.844 458.645 276.576 459.105 263.162C459.557 249.925 454.459 236.964 445.097 227.602C440.536 223.041 435.162 219.505 429.321 217.129L466.232 180.218L502.564 216.55C506.467 220.453 512.802 220.453 516.706 216.55C520.609 212.646 520.609 206.311 516.706 202.407L466.232 151.934L452.09 166.076L401.794 216.373C399.22 218.947 398.039 222.687 398.972 226.195C400.231 230.918 404.608 233.951 409.324 233.633C417.378 233.089 425.27 236.044 430.962 241.737C436.499 247.273 439.398 254.627 439.122 262.455C438.853 270.276 435.431 277.431 429.484 282.6C418.962 291.765 403.159 291.673 392.715 282.402C386.252 276.661 382.836 268.437 383.345 259.824C383.522 256.833 382.575 253.849 380.418 251.778C376.26 247.804 370.059 248.094 366.311 251.841L315.795 302.357L301.653 316.499L315.795 330.641L338.274 353.12L352.706 367.552C346.866 369.928 341.492 373.464 336.931 378.024C327.569 387.387 322.463 400.341 322.923 413.585C323.39 427.006 329.252 439.274 339.42 448.127C357.501 463.86 384.661 463.726 402.593 447.802C408.207 442.824 412.471 436.75 415.201 430.06L421.515 436.375L452.09 466.95L466.232 481.092L595.463 351.862C614.986 332.338 614.986 300.674 595.463 281.151L580.345 266.033C576.442 262.13 570.106 262.13 566.203 266.033C562.307 269.943 562.307 276.279 566.21 280.182Z" fill="#f9b233"/>
+                <path d="M549.233 247.677C553.138 243.771 553.138 237.44 549.233 233.534C545.327 229.629 538.996 229.629 535.09 233.534C531.185 237.44 531.185 243.771 535.09 247.677C538.996 251.582 545.327 251.582 549.233 247.677Z" fill="#f9b233"/>
               </g>
               <defs>
-                <clipPath id="clip0">
-                  <rect
-                    width="446.49"
-                    height="445.51"
-                    fill="white"
-                    transform="translate(0.786957 316.138) rotate(-45)"
-                  />
-                </clipPath>
+                <clippath id="clip0">
+                  <rect width="446.49" height="445.51" fill="white" transform="translate(0.786957 316.138) rotate(-45)"/>
+                </clippath>
               </defs>
             </svg>
           </div>
-          <h1 class="heading-moto">
-            Love to turn <br />
-            <span class="yellow-text"
-              ><img src="images/bulb.png" alt="i" class="bulb" />deas</span
-            >
-            into <span class="yellow-text">reality</span
-            ><span class="yellow-text">.</span>
+          <h1 class="heading-moto">Love to turn <br/>
+            <span class="yellow-text"><img src="images/bulb.png" alt="Letter I" class="bulb" />deas</span> into 
+            <span class="yellow-text">reality.</span>
           </h1>
         </div>
       </section>
     </header>
     <main>
-      <section class="about-me_section" id="tech">
+      <section class="about-me_section">
         <div class="about-me__container">
-          <img src="images/photo.png" class="photo" alt="my photo" />
+          <img src="images/photo.png" class="photo" alt="photo of StevenRi" />
           <div>
-            <h2>About Me</h2>
-            <p class="about-me__text">
-              My name is Stanisław Griszko. Creating websites and web
-              applications is my biggest passion. I have been constantly
-              developing it for 2 years. I focus all my attention on advancing
-              my skills and learning about new technologies.
-            </p>
+            <h2 class="about-me__title">About Me</h2>
+            <p class="about-me__subtitle">My name is Stanisław Griszko. Creating websites and web applications is my biggest passion. I have been constantly developing it for 2 years. I focus all my attention on advancing my skills and learning about new technologies.</p>
           </div>
         </div>
         <div class="skills">
-          <div class="skills__tech-title">
+          <div class="skills-title">
             <h2>Technologies</h2>
-            <p>which I use</p>
+            <p>I use</p>
           </div>
-          <div class="skills__container">
+          <div class="skills-container">
             <div class="skill-icon">
-              <img src="images/html5.png" alt="" />
+              <img src="images/html5.png" alt="html">
               <p>HTML</p>
             </div>
             <div class="skill-icon">
-              <img src="images/css.png" alt="" />
+              <img src="images/css.png" alt="css">
               <p>CSS</p>
             </div>
             <div class="skill-icon">
-              <img src="images/js.png" alt="" />
+              <img src="images/js.png" alt="javascript">
               <p>JavaScript</p>
             </div>
             <div class="skill-icon">
-              <img src="images/react.png" alt="" />
+              <img src="images/react.png" alt="react">
               <p>React</p>
             </div>
             <div class="skill-icon">
-              <img src="images/github.png" alt="" />
+              <img src="images/github.png" alt="github">
               <p>Github</p>
             </div>
             <div class="skill-icon">
-              <img src="images/Git.png" alt="" />
+              <img src="images/Git.png" alt="git">
               <p>Git</p>
             </div>
             <div class="skill-icon">
-              <img src="images/bootstrap.png" alt="" />
+              <img src="images/bootstrap.png" alt="bootstrap">
               <p>Bootstrap</p>
             </div>
             <div class="skill-icon">
-              <img src="images/Figma.png" alt="" />
+              <img src="images/Figma.png" alt="figma">
               <p>Figma</p>
             </div>
           </div>
-          <div class="skills__lang-title">
+          <div class="skills-title">
             <h2>Languages</h2>
             <p>I speak</p>
           </div>
-          <div class="skills__container">
+          <div class="skills-container">
             <div class="skill-icon">
-              <img src="images/en.png" alt="english" />
+              <img src="images/en.png" alt="english">
               <p>English</p>
             </div>
             <div class="skill-icon">
-              <img src="images/pl.png" alt="polish" />
+              <img src="images/pl.png" alt="polish">
               <p>Polish</p>
             </div>
             <div class="skill-icon">
-              <img src="images/ru.png" alt="russian" />
+              <img src="images/ru.png" alt="russian">
               <p>Russian</p>
             </div>
           </div>
@@ -237,209 +167,76 @@
       <section class="portfolio_section" id="projects">
         <div class="portfolio__projects-title">
           <h2>Projects</h2>
-          <p>which I created</p>
+          <p>I created</p>
         </div>
         <div class="portfolio-projects__container reverse">
           <div class="projects-image project__one">
-            <img src="images/race_place.png" alt="" />
+            <img src="images/race_place.png" alt="race_place project picture">
           </div>
           <div class="project-description">
             <h3>Race_Place</h3>
             <h4>Javascript</h4>
             <p>The project is dedicated to the game Dirt Rally 2.0</p>
-            <p>
-              It is in the development stage now. The goal is to collect the
-              cars' setups in one place for quicker setting up the car for the
-              rally stage
-            </p>
+            <p>It is in the development stage now. The goal is to collect the cars' setups in one place for quicker setting up the car for the rally stage</p>
             <div>
-              <a
-                class="btn"
-                href="https://stevenris.github.io/race_place/"
-                target="_blank"
-                >Demo</a
-              >
-              <a
-                class="btn"
-                href="https://github.com/StevenRis/race_place"
-                target="_blank"
-                >Code</a
-              >
+              <a class="btn" href="https://stevenris.github.io/race_place/" target="_blank">Demo</a>
+              <a class="btn" href="https://github.com/StevenRis/race_place" target="_blank">Code</a>
             </div>
           </div>
         </div>
-
         <div class="portfolio-projects__container">
           <div class="projects-image project__one">
-            <img src="images/note-keeper-app.png" alt="" />
+            <img src="images/note-keeper-app.png" alt="note-keeper-app project picture">
           </div>
           <div class="project-description">
             <h3>Note Keeper</h3>
             <h4>React, CSS</h4>
             <p>Note Keeper application</p>
             <div>
-              <a
-                class="btn"
-                href="https://loving-haibt-a002d5.netlify.app/"
-                target="_blank"
-                >Demo</a
-              >
-              <a
-                class="btn"
-                href="https://github.com/StevenRis/Note-Keeper"
-                target="_blank"
-                >Code</a
-              >
+              <a class="btn" href="https://loving-haibt-a002d5.netlify.app/" target="_blank">Demo</a>
+              <a class="btn" href="https://github.com/StevenRis/Note-Keeper" target="_blank">Code</a>
             </div>
           </div>
         </div>
-
         <div class="portfolio-projects__container reverse">
           <div class="projects-image project__one">
-            <img src="images/weather-app.png" alt="" />
+            <img src="images/weather-app.png" alt="weather-app project picture">
           </div>
           <div class="project-description">
             <h3>Weather App</h3>
             <h4>React, CSS</h4>
             <p>Web application is developed by using weather API</p>
             <div>
-              <a
-                class="btn"
-                href="https://musing-brown-fb90d2.netlify.app/"
-                target="_blank"
-                >Demo</a
-              >
-              <a
-                class="btn"
-                href="https://github.com/StevenRis/Weather-app"
-                target="_blank"
-                >Code</a
-              >
+              <a class="btn" href="https://musing-brown-fb90d2.netlify.app/" target="_blank">Demo</a>
+              <a class="btn" href="https://github.com/StevenRis/Weather-app" target="_blank">Code</a>
             </div>
           </div>
         </div>
-
         <div class="portfolio-projects__container">
           <div class="projects-image project__one">
-            <img src="images/to-do-list.png" alt="" />
+            <img src="images/to-do-list.png" alt="to-do-list project picture">
           </div>
           <div class="project-description">
             <h3>To Do List</h3>
             <h4>React, CSS</h4>
             <p>To Do List</p>
             <div>
-              <a
-                class="btn"
-                href="https://stevenris.github.io/ToDoList/"
-                target="_blank"
-                >Demo</a
-              >
-              <a
-                class="btn"
-                href="https://github.com/StevenRis/ToDoList"
-                target="_blank"
-                >Code</a
-              >
+              <a class="btn" href="https://stevenris.github.io/ToDoList/" target="_blank">Demo</a>
+              <a class="btn" href="https://github.com/StevenRis/ToDoList" target="_blank">Code</a>
             </div>
           </div>
         </div>
-
         <div class="portfolio-projects__container reverse">
           <div class="projects-image">
-            <img src="images/game.png" alt="" />
+            <img src="images/game.png" alt="rock-paper-scissors project picture">
           </div>
           <div class="project-description">
             <h3>Rock, Paper, Scissors Game</h3>
             <h4>JavaScript, CSS</h4>
-            <p>
-              The project is based on the well-known game Rock, Paper, Scissors
-            </p>
+            <p>The project is based on the well-known game Rock, Paper, Scissors</p>
             <div>
-              <a
-                class="btn"
-                href="https://stevenris.github.io/Game-rock-paper-scissors/"
-                target="_blank"
-                >Demo</a
-              >
-              <a
-                class="btn"
-                href="https://github.com/StevenRis/Game-rock-paper-scissors"
-                target="_blank"
-                >Code</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-projects__container">
-          <div class="projects-image project__one">
-            <img src="images/date.png" alt="" />
-          </div>
-          <div class="project-description">
-            <h3>DatePet</h3>
-            <h4>HTML, CSS, JS</h4>
-            <p>Online dating for pets</p>
-            <div>
-              <a
-                class="btn"
-                href="https://stevenris.github.io/DatePet/"
-                target="_blank"
-                >Demo</a
-              >
-              <a
-                class="btn"
-                href="https://github.com/StevenRis/DatePet"
-                target="_blank"
-                >Code</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- <div class="portfolio-projects__container reverse">
-          <div class="projects-image">
-            <img src="images/feel.png" alt="" />
-          </div>
-          <div class="project-description">
-            <h3>SoundEnergy</h3>
-            <h4>HTML, CSS, JS</h4>
-            <p>Audio streaming portal</p>
-            <div>
-              <a
-                class="btn"
-                href="https://stevenris.github.io/SoundEnergy/"
-                target="_blank"
-                >Demo</a
-              >
-              <a
-                class="btn"
-                href="https://github.com/StevenRis/SoundEnergy"
-                target="_blank"
-                >Code</a
-              >
-            </div>
-          </div>
-        </div> -->
-        <div class="portfolio-projects__container reverse">
-          <div class="projects-image">
-            <img src="images/port.png" alt="" />
-          </div>
-          <div class="project-description">
-            <h3>Portfolio website</h3>
-            <h4>Bootstrap</h4>
-            <p>Website was made for presenting photographer's work</p>
-            <div>
-              <a
-                class="btn"
-                href="https://stevenris.github.io/Photographer-portfolio/"
-                target="_blank"
-                >Demo</a
-              >
-              <a
-                class="btn"
-                href="https://github.com/StevenRis/Photographer-portfolio"
-                target="_blank"
-                >Code</a
-              >
+              <a class="btn" href="https://stevenris.github.io/Game-rock-paper-scissors/" target="_blank">Demo</a>
+              <a class="btn" href="https://github.com/StevenRis/Game-rock-paper-scissors" target="_blank">Code</a>
             </div>
           </div>
         </div>
@@ -449,103 +246,45 @@
           <h2>Get in touch</h2>
           <p class="p__text">Message me</p>
           <div class="form-input">
-            <input
-              type="text"
-              name="from_name"
-              id="from_name"
-              autocomplete="off"
-              value=""
-              required
-              class="_req"
-            />
+            <input id="from_name" type="text" name="from_name" autocomplete="off" required>
             <label for="from_name" class="label-name">
               <span class="content-name name">Full Name</span>
             </label>
           </div>
           <div class="form-input">
-            <input
-              type="text"
-              name="reply_to"
-              id="reply_to"
-              autocomplete="off"
-              value=""
-              required
-              class="_req"
-            />
+            <input id="reply_to" type="email" name="reply_to" autocomplete="off" required>
             <label for="reply_to" class="label-name">
               <span class="content-name email">Email</span>
             </label>
           </div>
           <div class="form-input">
-            <input
-              type="text"
-              name="phone"
-              id="phone"
-              autocomplete="off"
-              value=""
-              required
-              class="_req"
-            />
+            <input id="phone" type="number" name="phone" autocomplete="off" required>
             <label for="phone" class="label-name">
               <span class="content-name phone">Phone</span>
             </label>
           </div>
           <div class="form-input">
-            <input
-              type="text"
-              name="message"
-              id="message"
-              autocomplete="off"
-              value=""
-              required
-              class="_req"
-            />
-            <label for="message" class="label-name" class="_req">
+            <input id="message" type="text" name="message" autocomplete="off" required>
+            <label for="message" class="label-name _req">
               <span class="content-name message">Your Message</span>
             </label>
           </div>
-          <!-- <a class="btn btn-form" id="button" value="Send Email" type="submit"><img src="images/send-mail.png" alt="" />Send</a> -->
-          <button
-            class="btn btn-form"
-            id="button"
-            value="Send Email"
-            type="submit"
-          >
-            <img src="images/send-mail.png" alt="" />
-            <span>Send</span>
-          </button>
+          <button class="btn btn-form" id="button" value="Send Email"><img src="images/send-mail.png" alt="send email icon">Send</button>
         </form>
         <section class="contact-information">
           <div class="contact-icons">
             <div class="contact-icon">
-              <img src="images/phone-icon.png" alt="" />
+              <img src="images/phone-icon.png" alt="phone-icon">
               <a href="tel:+48577029034">+48 577 029 034</a>
             </div>
             <div class="contact-icon">
-              <img src="images/email-icon.png" alt="" />
-              <a
-                href="mailto:s.griszko@gmail.com"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                >s.griszko@gmail.com</a
-              >
+              <img src="images/email-icon.png" alt="email-icon">
+              <a href="mailto:s.griszko@gmail.com" target="_blank" rel="nofollow noopener noreferrer">s.griszko@gmail.com</a>
             </div>
             <div class="social-icons__bottom">
-              <a
-                href="https://www.facebook.com/profile.php?id=100014849559908"
-                target="_blank"
-                ><img src="images/facebook.png" alt=""
-              /></a>
-              <a
-                href="https://github.com/StevenRis?tab=repositories"
-                target="_blank"
-                ><img src="images/github-icon.png" alt=""
-              /></a>
-              <a
-                href="https://www.linkedin.com/in/stanis%C5%82aw-griszko-b8a595122/"
-                target="_blank"
-                ><img src="images/linkedin.png" alt=""
-              /></a>
+              <a href="https://www.facebook.com/profile.php?id=100014849559908" target="_blank"><img src="images/facebook.png" alt="facebook icon"/></a>
+              <a href="https://github.com/StevenRis?tab=repositories" target="_blank"><img src="images/github-icon.png" alt="github icon"/></a>
+              <a href="https://www.linkedin.com/in/stanis%C5%82aw-griszko-b8a595122/" target="_blank"><img src="images/linkedin.png" alt="linkedin icon"/></a>
             </div>
           </div>
         </section>
@@ -560,21 +299,9 @@
       <p id="year"></p>
       <p>Created by StevenRi</p>
     </footer>
-
-    <script src="js/main.js"></script>
-    <script src="js/lang.js"></script>
-
-    <!-- <script src="js/history.js"></script> -->
-
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-
-    <script type="text/javascript">
-      emailjs.init('user_MeiF1bYPoZ1clXhDQgEev');
-    </script>
-
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('user_MeiF1bYPoZ1clXhDQgEev');</script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

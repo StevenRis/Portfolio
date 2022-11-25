@@ -3,7 +3,7 @@
 ::before {
   margin: 0;
   padding: 0;
-  transition: all ease-in-out 250ms;
+  /* transition: all ease-in-out 250ms; */
 }
 
 :root {
@@ -33,7 +33,6 @@ body {
 }
 
 header {
-  /* height: 100vh; */
   padding: 1.5em 1.5em 0;
 }
 
@@ -111,35 +110,29 @@ ul {
   margin-right: 1rem;
 }
 
-.lang {
+.language {
   display: flex;
   align-items: center;
 }
 
-.lang a {
+.language a {
   cursor: pointer;
   filter: saturate(50%);
 }
 
-.lang a:hover {
+.language a:hover {
   filter: saturate(100%);
-  transform: scale(1.1);
 }
 
-.lang-img {
-  width: 4rem;
-  height: auto;
+.hero {
+  text-align: left;
 }
 
 .yellow-dot {
   color: var(--gold);
 }
 
-.welcome-box {
-  text-align: left;
-}
-
-.welcome-text {
+.hero-text {
   margin-top: 7vh;
 }
 
@@ -153,26 +146,13 @@ ul {
   align-items: center;
 }
 
-.box__right {
+.hero__right-side {
   border-radius: 2%;
 }
 
 .heading-moto {
   margin: 0.5em 0;
   transform: scale(1);
-  /* animation: scale 1s ease-in-out 1s; */
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 .bulb {
@@ -216,18 +196,18 @@ ul {
   border-radius: 2%;
 }
 
-.about-me__text {
+.about-me__subtitle {
   text-align: left;
 }
 
-.skills__container {
+.skills-container {
   display: grid;
   grid-template-columns: auto auto auto;
   place-items: center;
   align-items: center;
 }
 
-.skills__container img {
+.skills-container img {
   display: block;
   width: 6rem;
   height: auto;
@@ -279,7 +259,6 @@ ul {
 
 .contact-icons a:hover {
   color: var(--gold);
-  letter-spacing: 0.5px;
 }
 
 .contact-icon img {
@@ -471,10 +450,6 @@ ul {
 
 .social-icons__bottom img {
   width: 3rem;
-}
-
-.social-icons__bottom img:hover {
-  transform: scale(1.1);
 }
 
 .menu-btn__burger {
