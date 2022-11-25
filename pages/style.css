@@ -712,3 +712,35 @@ svg {
     display: block;
   }
 }
+
+/* Go top button */
+.goTopButton {
+  position: fixed;
+  bottom: 60px;
+  right: 6px;
+  display: none;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 99;
+}
+.line1, .line2 {
+    width: 20px;
+    height: 2px;
+    margin: 3px 0 0 -4px;
+    background-color: var(--gold);
+    transition: 0.7s;
+}
+
+.line1 {
+    transform: rotate(128deg) translate(3px, 3px);
+}
+
+.line2{
+    transform: rotate(45deg) translate(2px, -9px);
+}
+
+@media(min-width: 768px) {
+  .goTopButton {
+  right: 25px;
+  }
+}
