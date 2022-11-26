@@ -252,11 +252,11 @@ svg {
 }
 
 .skills-container img {
-  display: block;
+  /* display: block; */
   width: 6rem;
   height: auto;
 }
-
+nw
 .skill-icon {
   display: flex;
   flex-direction: column;
@@ -268,20 +268,22 @@ svg {
   color: var(--white);
 }
 
-.project-description {
-  margin-top: -2em;
+.portfolio-projects__container {
+  margin-bottom: 3em;
 }
 
-.project__one {
-  margin-top: -2em;
+.project-description {
+  margin-top: 1em;
+}
+
+#weather {
+  width: 40%;
 }
 
 .projects-image img {
-  width: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  transform: scale(0.7);
+  width: 60%;
+  margin: 0 auto;
 }
 
 .contact-information {
@@ -491,6 +493,7 @@ svg {
 
 .social-icons__bottom {
   display: flex;
+  justify-content: center;
 }
 
 .social-icons__bottom img {
@@ -700,9 +703,9 @@ svg {
   }
 
   .portfolio-projects__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* align-items: center; */
   }
 
   .reverse {
