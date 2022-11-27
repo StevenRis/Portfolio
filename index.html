@@ -251,7 +251,8 @@
         </div>
       </section>
       <section class="contact_section" id="contact">
-        <form class="contact-form" id="form">
+        <form class="contact-form" id="form" action="https://formspree.io/f/myyvanbo"
+        method="POST">
           <h2>Get in touch</h2>
           <p class="p__text">Message me</p>
           <div class="form-input">
@@ -267,7 +268,7 @@
             </label>
           </div>
           <div class="form-input">
-            <input id="phone" type="number" name="phone" autocomplete="off" required>
+            <input id="phone" type="text" name="phone" autocomplete="off" required>
             <label for="phone" class="label-name">
               <span class="content-name phone">Phone</span>
             </label>
@@ -278,7 +279,7 @@
               <span class="content-name message">Your Message</span>
             </label>
           </div>
-          <button class="btn btn-form" id="button" value="Send Email"><img src="assets/icons/send-mail.png" alt="send email icon">Send</button>
+          <button class="btn btn-form" id="button" value="Send Email" type="submit"><img src="assets/icons/send-mail.png" alt="send email icon">Send</button>
         </form>
         <div class="contact-information">
           <div class="contact-icons">
@@ -298,11 +299,6 @@
           </div>
         </div>
       </section>
-      <section class="popup">
-        <div class="popup-container">
-          <h2>Your message has been sent!</h2>
-        </div>
-      </section>
       <div class="goTopButton">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -313,8 +309,5 @@
       <p>Created by StevenRi</p>
     </footer>
     <script src="assets/js/script.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
-    <!-- <script>emailjs.init('user_MeiF1bYPoZ1clXhDQgEev');</script> -->
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
   </body>
 </html>

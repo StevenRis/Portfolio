@@ -431,6 +431,7 @@ nw
 }
 
 .navigation.active ul {
+  text-align: center;
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
@@ -585,30 +586,11 @@ nw
   margin-right: 0.5em;
 }
 
-.popup-container {
-  display: none;
-}
-
-.popup-container.send {
-  display: block;
-  position: fixed;
-  width: 35vh;
-  height: 15vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: var(--gold);
-  justify-content: center;
-  align-items: center;
-}
-
 @media (min-width: 40rem) {
   .btn-center {
     justify-content: left;
   }
 }
-
-
 
 /* Media-quaries */
 /* 1200px / 16px = 75em */
