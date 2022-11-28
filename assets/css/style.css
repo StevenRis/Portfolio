@@ -136,13 +136,6 @@ svg {
   height: 15em;
 }
 
-@media (min-width: 1441px) {
-  svg {
-    width: 25em;
-    height: 25em;
-  }
-}
-
 #logo {
   transform: translate(0%, 0%);
 }
@@ -186,6 +179,7 @@ svg {
 
 .heading-moto {
   margin: 0.5em 0;
+  text-align: center;
   transform: scale(1);
 }
 
@@ -196,16 +190,6 @@ svg {
 .yellow-text {
   color: var(--gold);
   text-shadow: -2px 0 var(--black), 0 2px var(--black), 2px 0 var(--black), 0 -2px var(--black);
-}
-
-@media (max-width: 360px) {
-  .heading-moto {
-    font-size: 4rem;
-  }
-
-  .bulb {
-    width: 3rem;
-  }
 }
 
 .accent-text {
@@ -443,11 +427,7 @@ svg {
   color: var(--black);
 }
 
-@media (max-width: 767px) {
-  .navigation ul li a {
-    font-size: 1.8em;
-  }
-}
+
 
 .social-icons {
   z-index: 1;
@@ -573,13 +553,41 @@ svg {
   margin-right: 0.5em;
 }
 
-@media (min-width: 40rem) {
-  .btn-center {
-    justify-content: left;
-  }
+/* Go top button */
+.goTopButton {
+  position: fixed;
+  bottom: 60px;
+  right: 6px;
+  z-index: 99;
+  display: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.line1, .line2 {
+    width: 20px;
+    height: 2px;
+    margin: 3px 0 0 -4px;
+    background-color: var(--gold);
+    transition: 0.7s;
+}
+
+.line1 {
+    transform: rotate(128deg) translate(3px, 3px);
+}
+
+.line2{
+    transform: rotate(45deg) translate(2px, -9px);
 }
 
 /* Media-quaries */
+@media (min-width: 1441px) {
+  svg {
+    width: 25em;
+    height: 25em;
+  }
+}
+
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
   html {
@@ -605,6 +613,12 @@ svg {
   header {
     max-width: 65vw;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 40rem) {
+  .btn-center {
+    justify-content: left;
   }
 }
 
@@ -675,37 +689,24 @@ svg {
   .svg {
     display: block;
   }
-}
 
-/* Go top button */
-.goTopButton {
-  position: fixed;
-  bottom: 60px;
-  right: 6px;
-  z-index: 99;
-  display: none;
-  padding: 15px;
-  cursor: pointer;
-}
-
-.line1, .line2 {
-    width: 20px;
-    height: 2px;
-    margin: 3px 0 0 -4px;
-    background-color: var(--gold);
-    transition: 0.7s;
-}
-
-.line1 {
-    transform: rotate(128deg) translate(3px, 3px);
-}
-
-.line2{
-    transform: rotate(45deg) translate(2px, -9px);
-}
-
-@media(min-width: 768px) {
   .goTopButton {
-  right: 25px;
+    right: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+  .navigation ul li a {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 360px) {
+  .heading-moto {
+    font-size: 4rem;
+  }
+
+  .bulb {
+    width: 3rem;
   }
 }

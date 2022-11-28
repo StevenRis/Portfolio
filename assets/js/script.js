@@ -56,5 +56,4 @@ document.addEventListener('DOMContentLoaded', () => {
   function topFunction() {
     document.documentElement.scrollTop = 0;
   }
-
 });
