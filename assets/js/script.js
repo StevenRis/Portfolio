@@ -21,13 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuOpen = false;
   }
 
-  menuBtn.addEventListener('click', () => {
-    if (!menuOpen) {
-      openBurgerMenu();
-    } else {
-      closeBurgerMenu();
-    }
-  });
+  menuBtn.addEventListener('click', () => !menuOpen ? openBurgerMenu() : closeBurgerMenu());
 
   const nav = document.querySelector('ul'),
     navItems = document.querySelectorAll('li');
@@ -41,33 +35,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const year = currentDate.getFullYear();
   document.getElementById('year').innerHTML = '&#169; Copyright 2020 - ' + year;
 
-  // send form
-  const btn = document.getElementById('button');
-  const popUp = document.querySelector('.popup-container');
+  // Go top button
+  let goTopButton = document.querySelector(".goTopButton");
+  // Listen to scroll event and display button
+  window.addEventListener('scroll', () => {
+    scrollFunction()
+  })
 
-  document.getElementById('form').addEventListener('submit', function (event) {
-    event.preventDefault();
+  // When the user clicks on the button, scroll to the top of the document
+  goTopButton.addEventListener('click', () => {
+    topFunction()
+  })
 
-    const serviceID = 'default_service';
-    const templateID = 'template_8eadzxr';
+  // Display button when the user scrolls down 20px from the top of the document
+  function scrollFunction() { 
+    window.scrollY > 20 ? goTopButton.style.display = 'block' : goTopButton.style.display = 'none';
+  }
 
-    function sent() {
-      popUp.classList.add('send');
-      document.getElementById('form').reset();
-    }
-
-    emailjs.sendForm(serviceID, templateID, this).then(
-      () => {
-        sent();
-
-        function removeClass() {
-          popUp.classList.remove('send');
-        }
-        setTimeout(removeClass, 3000);
-      },
-      (err) => {
-        alert(JSON.stringify(err));
-      }
-    );
-  });
+  // Scroll to the top of the document
+  function topFunction() {
+    document.documentElement.scrollTop = 0;
+  }
 });
