@@ -21,7 +21,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
   background: var(--black);
-  color: var(--white)
+  color: var(--white);
 }
 
 h1 {
@@ -35,7 +35,8 @@ h2 {
   font-size: 3rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  text-shadow: -1px 0 var(--gold), 0 1px var(--gold), 1px 0 var(--gold), 0 -1px var(--gold);
+  text-shadow: -1px 0 var(--gold), 0 1px var(--gold), 1px 0 var(--gold),
+    0 -1px var(--gold);
   color: var(--black);
 }
 
@@ -189,7 +190,8 @@ svg {
 
 .yellow-text {
   color: var(--gold);
-  text-shadow: -2px 0 var(--black), 0 2px var(--black), 2px 0 var(--black), 0 -2px var(--black);
+  text-shadow: -2px 0 var(--black), 0 2px var(--black), 2px 0 var(--black),
+    0 -2px var(--black);
 }
 
 .accent-text {
@@ -281,7 +283,7 @@ svg {
 }
 
 .contact-icon img {
-  width: 4rem;
+  width: 3rem;
 }
 
 .contact-form {
@@ -427,8 +429,6 @@ svg {
   color: var(--black);
 }
 
-
-
 .social-icons {
   z-index: 1;
   display: flex;
@@ -564,20 +564,21 @@ svg {
   cursor: pointer;
 }
 
-.line1, .line2 {
-    width: 20px;
-    height: 2px;
-    margin: 3px 0 0 -4px;
-    background-color: var(--gold);
-    transition: 0.7s;
+.line1,
+.line2 {
+  width: 20px;
+  height: 2px;
+  margin: 3px 0 0 -4px;
+  background-color: var(--gold);
+  transition: 0.7s;
 }
 
 .line1 {
-    transform: rotate(128deg) translate(3px, 3px);
+  transform: rotate(128deg) translate(3px, 3px);
 }
 
-.line2{
-    transform: rotate(45deg) translate(2px, -9px);
+.line2 {
+  transform: rotate(45deg) translate(2px, -9px);
 }
 
 /* Media-quaries */
@@ -674,7 +675,7 @@ svg {
 
   .goTopButton {
     right: 25px;
-    }
+  }
 }
 
 @media (max-width: 767px) {
